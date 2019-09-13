@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "key": "start",
+            "value": "Commencer"
+        },
+        {
+            "key":"player",
+            "value":"Joueur"
+        },
+        {
+            "key": "computer",
+            "value": "Ordinateur"
+        },
+        {
+            "key":"counterText",
+            "value": "{0}/5 max"
+        }
+    ]
+}

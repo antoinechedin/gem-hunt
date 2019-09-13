@@ -1,0 +1,129 @@
+{
+    "items": [
+         {
+            "key":"languages",
+            "value": "Langues"
+        },
+        {
+            "key":"newGame",
+            "value": "Nouvelle Partie"
+        },
+        {
+            "key": "start",
+            "value": "Commencer"
+        },
+        {
+            "key":"player",
+            "value":"Joueur"
+        },
+        {
+            "key": "computer",
+            "value": "Ordinateur"
+        },
+        {
+            "key":"counterText",
+            "value": "{0}/5 max"
+        },
+        {
+            "key":"stop",
+            "value": "Arrêter"
+        },
+        {
+            "key":"continue",
+            "value": "Continuer"
+        },
+        {
+            "key":"turnText",
+            "value": "Tour de {0}"
+        },
+        {
+            "key":"winText",
+            "value": "Victoire de {0}"
+        },
+        {
+            "key":"results",
+            "value": "Résultats"
+        },
+        {
+            "key":"restart",
+            "value": "Recommencer"
+        },
+        {
+            "key":"home",
+            "value": "Accueil"
+        },
+        {
+            "key":"pause",
+            "value": "Pause"
+        },
+        {
+            "key":"resume",
+            "value": "Reprendre"
+        },
+        {
+            "key":"rules",
+            "value": "Règles"
+        },
+        {
+            "key":"dicePool",
+            "value": "La réserve"
+        },
+        {
+            "key":"goodGame",
+            "value": "Bonne partie"
+        },
+        {
+            "key":"rules_0_0",
+            "value": "Gem Hunt est un jeu de dés où il faut capturer des gemmes corrompues."
+        },
+        {
+            "key":"rules_0_1",
+            "value": "Au début de votre tour, 3 dés sont pris aléatoirement de la réserve. Chacun représente une gemme corrompue."
+        },
+        {
+            "key":"rules_0_2",
+            "value": "Les dés verts sont les plus simples, les oranges sont moyens, et les rouges sont les plus durs."
+        },
+        {
+            "key":"rules_1_0",
+            "value": "Les dés ont 3 symboles :"
+        },
+        {
+            "key":"rules_1_1",
+            "value": "Bulle : Tu as capturé la gemme, et tu marques 1 point. Il y en a 3 sur les dés verts, 2 sur les oranges et 1 sur les rouges."
+        },
+        {
+            "key":"rules_1_2",
+			"value": "Griffe : Tu as pris un coup ! Tu perds 1 point de vie. Il y en a 3 sur les dés verts, 2 sur les oranges et 1 sur les verts."
+        },
+        {
+            "key":"rules_1_3",
+            "value": "Traces : La gemme s'est échappée. Si tu choisis de continuer ta chasse, tu le relanceras au lieu d'en prendre un nouveau. Il y en a 2 quelle que soit la couleur du dé."
+        },
+        {
+            "key":"rules_2_0",
+            "value": "Si tu perds tous tes points de vie, ton tour se termine et tu perds les points que tu as gagné ce tour. Sinon tu peux choisir d'arrêter ou de continuer la chasse."
+        },
+        {
+            "key":"rules_2_1",
+            "value": "Si tu choisis d'arrêter, tu sauvegardes tes points, reprends tes points de vie et le joueur suivant commence son tour."
+        },
+        {
+            "key":"rules_2_2",
+            "value": "Si tu choisis de continuer, les bulles et les griffes sont mis à l'écart et de nouveaux dés sont tirées de la réserve pour toujours avoir 3 dés. à lancer."
+        },
+        {
+            "key":"rules_3_0",
+            "value": "Garde en tête que relancer un dé rouge comporte plus de risques qu'avec un dé vert. Si tu n'as plus qu'un point de vie, tu devrais peut-être arrêter ta chasse."
+        },
+        {
+            "key":"rules_3_1",
+            "value": "Fait aussi attention à la réserve. Il est risqué de continuer s'il ne reste que des dés rouges ou oranges."
+        },
+        {
+            "key":"rules_3_2",
+            "value": "Le premier joueur à 13 points gagne la partie."
+        }
+    ]
+}
+	

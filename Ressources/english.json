@@ -1,0 +1,128 @@
+{
+    "items": [
+         {
+            "key":"languages",
+            "value": "Languages"
+        },
+        {
+            "key":"newGame",
+            "value": "New Game"
+        },
+        {
+            "key": "start",
+            "value": "Start"
+        },
+        {
+            "key":"player",
+            "value":"Player"
+        },
+        {
+            "key": "computer",
+            "value": "Computer"
+        },
+        {
+            "key":"counterText",
+            "value": "{0}/5 max"
+        },
+        {
+            "key":"stop",
+            "value": "Stop"
+        },
+        {
+            "key":"continue",
+            "value": "Continue"
+        },
+        {
+            "key":"turnText",
+            "value": "{0}'s turn"
+        },
+        {
+            "key":"winText",
+            "value": "{0} wins!"
+        },
+        {
+            "key":"results",
+            "value": "Results"
+        },
+        {
+            "key":"restart",
+            "value": "Restart"
+        },
+        {
+            "key":"home",
+            "value": "Home"
+        },
+        {
+            "key":"pause",
+            "value": "Pause"
+        },
+        {
+            "key":"resume",
+            "value": "Resume"
+        },
+        {
+            "key":"rules",
+            "value": "Rules"
+        },
+        {
+            "key":"dicePool",
+            "value": "Dice pool"
+        },
+        {
+            "key":"goodGame",
+            "value": "Good Game"
+        },
+        {
+            "key":"rules_0_0",
+            "value": "Gem Hunt is a dice game where you track corrupted gems to capture them."
+        },
+        {
+            "key":"rules_0_1",
+            "value": "On your turn, 3 dice are taken from the pool and rolled. Each represents a corrupted gem."
+        },
+        {
+            "key":"rules_0_2",
+            "value": "Green dices are the easiest, orange are medium though and red are the thoughest."
+        },
+        {
+            "key":"rules_1_0",
+            "value": "The dices have 3 symbols:"
+        },
+        {
+            "key":"rules_1_1",
+            "value": "Bubble: You caputered the gem, scoring 1 point. There's 3 of them on green dice, 2 on orange and only 1 on red."
+        },
+        {
+            "key":"rules_1_2",
+            "value": "Claws: The gem fought back! You lose 1 life point. There's 3 of them on red dice, 2 on orange and 1 on green."
+        },
+        {
+            "key":"rules_1_3",
+            "value": "Footprints: The gem escaped. If you choose to continue your hunt, you will re-roll this dice instead of picking a new one. There's 2 of them, no matter the dice color."
+        },
+        {
+            "key":"rules_2_0",
+            "value": "If you lose all your life points, your turn is over and you lose all the points you got this turn. Otherwise, you can choose to stop or to continue the hunt."
+        },
+        {
+            "key":"rules_2_1",
+            "value": "If you choose to stop, you save your points, you restore your health and the next player's turn begins."
+        },
+        {
+            "key":"rules_2_2",
+            "value": "If you choose to continue, bubble and claws dice are set aside and new random dice are taken from the pool so you always have 3 dice to roll."
+        },
+        {
+            "key":"rules_3_0",
+            "value": "Keep in mind that re-rolling red dice are more dangerous than green ones. If you only have 1 life point left, maybe you should stop your hunt."
+        },
+        {
+            "key":"rules_3_1",
+            "value": "Same thing if there's only red or orange dice left in the pool. So keep an eye on it."
+        },
+        {
+            "key":"rules_3_2",
+            "value": "The first player to have 13 points or more wins the game."
+        }
+    ]
+}

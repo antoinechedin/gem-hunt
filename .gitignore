@@ -32,5 +32,8 @@ ExportedObj/
 sysinfo.txt
 
 # Builds
-*.apk
+build/
 *.unitypackage
+
+# Visual Studio Code
+.vscode/

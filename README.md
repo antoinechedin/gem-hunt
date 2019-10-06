@@ -1,6 +1,6 @@
 ![Gem Hunt banner](doc/readme-banner.png "Gem Hunt banner")
 
-# Gem hunt Hunt : a Steven Universe dice game.
+# Gem Hunt : a Steven Universe dice game.
 
 Play as Garnet, Amethyst and Pearl, and Steven, and even more in this strategic
 dice game where you hunt and capture corrupted gems. Up to 5 players, alone

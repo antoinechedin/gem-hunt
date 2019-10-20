@@ -32,6 +32,7 @@ public class LocalizationManager : MonoBehaviour
         languages = new Dictionary<string, string>();
         languages.Add("french", french);
         languages.Add("english", english);
+        languages.Add("spanish", spanish);
         languages.Add("portuguese", portuguese);
     }
 

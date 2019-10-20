@@ -7,6 +7,7 @@ public class LangManager : MonoBehaviour
 {
     public Button french;
     public Button english;
+    public Button spanish;
     public Button portuguese;
     public AudioSource audioSource;
 
@@ -18,6 +19,8 @@ public class LangManager : MonoBehaviour
                 french.onClick.AddListener(delegate { SetLang("french"); });
             if (english != null)
                 english.onClick.AddListener(delegate { SetLang("english"); });
+            if (spanish != null)
+                spanish.onClick.AddListener(delegate { SetLang("spanish"); });
             if (portuguese != null)
                 portuguese.onClick.AddListener(delegate { SetLang("portuguese"); });
         }

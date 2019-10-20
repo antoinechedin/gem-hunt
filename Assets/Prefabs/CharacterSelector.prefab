@@ -63,8 +63,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: +
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26664902f27aad344b6446b95c5a939e, type: 2}
@@ -168,8 +166,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7895783158526210185}
   - component: {fileID: 7895783158526210190}
-  - component: {fileID: 7895783158526210191}
-  - component: {fileID: 7895783158526210184}
+  - component: {fileID: 8971083833398317402}
+  - component: {fileID: 16622550172437666}
   - component: {fileID: 5463125775875181100}
   - component: {fileID: -430944833397748994}
   m_Layer: 5
@@ -207,7 +205,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7895783158526210186}
   m_CullTransparentMesh: 0
---- !u!114 &7895783158526210191
+--- !u!114 &8971083833398317402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,7 +214,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7895783158526210186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -225,8 +223,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 1ae87b95e3826294e80f30b7b08c807c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -236,8 +232,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!114 &7895783158526210184
+--- !u!114 &16622550172437666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,11 +241,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7895783158526210186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -258,30 +253,25 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.2509804}
     m_ColorMultiplier: 1
     m_FadeDuration: 0
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7895783158526210191}
+  m_TargetGraphic: {fileID: 8971083833398317402}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &5463125775875181100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,8 +284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7a98fad0e095f42bd6ed8f09c88653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 7895783158526210191}
-  button: {fileID: 7895783158526210184}
+  image: {fileID: 8971083833398317402}
+  button: {fileID: 16622550172437666}
   plus: {fileID: 6322371166048003746}
   circle: {fileID: 21300000, guid: 1ae87b95e3826294e80f30b7b08c807c, type: 3}
   click: {fileID: 8300000, guid: b55e7245b9ee8e542af6fe4b36dd060f, type: 3}

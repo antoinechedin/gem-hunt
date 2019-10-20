@@ -64,8 +64,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Footprints: The gem escaped. If you choose to continue your hunt, you will
     reroll this dice instead of picking a new one. There''s 2 of them, no matter the
     dice color.'
@@ -241,8 +239,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Bubble: You caputered the gem, scoring 1 point. There''s 3 of them on green
     dice, 2 on orange and only 1 on red.'
   m_isRightToLeft: 0
@@ -417,8 +413,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Claws: The gem fought back! You lose 1 life point. There''s 3 of them on
     red dice, 2 on orange and 1 on green.'
   m_isRightToLeft: 0
@@ -539,7 +533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2929811489872154106}
   - component: {fileID: 4437191873860843465}
-  - component: {fileID: 8016309480580491456}
+  - component: {fileID: 3397748654588970708}
   m_Layer: 5
   m_Name: FootprintsIcon
   m_TagString: Untagged
@@ -574,7 +568,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3003207766879499080}
   m_CullTransparentMesh: 0
---- !u!114 &8016309480580491456
+--- !u!114 &3397748654588970708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -583,7 +577,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3003207766879499080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -592,8 +586,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 3aa20a90f01569c4ebcfcebbc6fe1c8b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -603,7 +595,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5878407354526599568
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4313450700373665712}
   - component: {fileID: 2083971019440036893}
-  - component: {fileID: 1715582741963546372}
+  - component: {fileID: 7672821815338615710}
   m_Layer: 5
   m_Name: ClawsIcon
   m_TagString: Untagged
@@ -649,7 +640,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5878407354526599568}
   m_CullTransparentMesh: 0
---- !u!114 &1715582741963546372
+--- !u!114 &7672821815338615710
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -658,7 +649,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5878407354526599568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -667,8 +658,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: d5a7dd2e5ee5c92488d0abc89fcd489a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -678,7 +667,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5925617642853784273
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,8 +731,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'The dices have 3 symbols:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26664902f27aad344b6446b95c5a939e, type: 2}
@@ -864,7 +850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2784961932442289390}
   - component: {fileID: 5263075772985214072}
-  - component: {fileID: 5039119946758398595}
+  - component: {fileID: 6116561576554715081}
   m_Layer: 5
   m_Name: BubbleIcon
   m_TagString: Untagged
@@ -899,7 +885,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6664123136929755358}
   m_CullTransparentMesh: 0
---- !u!114 &5039119946758398595
+--- !u!114 &6116561576554715081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -908,7 +894,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6664123136929755358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -917,8 +903,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: c74fc87feb86ab54b9dfc7d8dd8717c0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -928,7 +912,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &4239062456880826307
 PrefabInstance:
   m_ObjectHideFlags: 0

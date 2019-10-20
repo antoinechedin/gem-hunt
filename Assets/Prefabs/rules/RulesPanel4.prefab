@@ -64,8 +64,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Good game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26664902f27aad344b6446b95c5a939e, type: 2}
@@ -239,8 +237,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Same thing if there's only red or orange dice left in the pool. So keep
     an eye on it.
   m_isRightToLeft: 0
@@ -361,7 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 708509611173431326}
   - component: {fileID: 539827657790991054}
-  - component: {fileID: 2803547263519829530}
+  - component: {fileID: 3707291642619795371}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -396,7 +392,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921363072401460424}
   m_CullTransparentMesh: 0
---- !u!114 &2803547263519829530
+--- !u!114 &3707291642619795371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -405,7 +401,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1921363072401460424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -414,8 +410,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 72a1c71ae5d0c074db9bb87d0f7fc546, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -425,7 +419,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5195565935938043531
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,8 +483,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: The first player to have 13 points or more win the game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26664902f27aad344b6446b95c5a939e, type: 2}
@@ -665,8 +656,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Keep in mind that rerolling red dice is more dangerous than green ones.
     If you only have 1 life point left, maybe you should stop your hunt.
   m_isRightToLeft: 0
@@ -787,7 +776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632121178579086237}
   - component: {fileID: 6534168265947655637}
-  - component: {fileID: 4604582185314713275}
+  - component: {fileID: 8309783995346284368}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -822,7 +811,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7956340337426075460}
   m_CullTransparentMesh: 0
---- !u!114 &4604582185314713275
+--- !u!114 &8309783995346284368
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -831,7 +820,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7956340337426075460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -840,8 +829,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 72a1c71ae5d0c074db9bb87d0f7fc546, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -851,7 +838,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &8333700738347325740
 PrefabInstance:
   m_ObjectHideFlags: 0

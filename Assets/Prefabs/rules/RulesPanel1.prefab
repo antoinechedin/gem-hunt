@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7052473210474840194}
   - component: {fileID: 3820553760639025843}
-  - component: {fileID: 3364690821364733693}
+  - component: {fileID: 2516294774386650653}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -45,7 +45,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2431053377462075805}
   m_CullTransparentMesh: 0
---- !u!114 &3364690821364733693
+--- !u!114 &2516294774386650653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2431053377462075805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -63,8 +63,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 45e171d267daf4c49af59027f3a76ef6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -74,7 +72,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2848162159896211686
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,8 +136,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Green dice are the easiest, orange are medium though and red are the thoughest.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26664902f27aad344b6446b95c5a939e, type: 2}
@@ -314,8 +309,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'On your turn 3 dices are taken form the pool and rolled. Each one represent
     a corrupted gem. '
   m_isRightToLeft: 0
@@ -490,8 +483,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Gem Hunt is a dice game where you track corrupted gems to capture them.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26664902f27aad344b6446b95c5a939e, type: 2}
@@ -665,8 +656,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: dice pool
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26664902f27aad344b6446b95c5a939e, type: 2}

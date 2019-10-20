@@ -471,127 +471,127 @@ public class LocalizationManager : MonoBehaviour
     ""items"": [
          {
             ""key"":""languages"",
-            ""value"": ""pqeoisre""
+            ""value"": ""Idiomas""
         },
         {
             ""key"":""newGame"",
-            ""value"": ""drgdrg""
+            ""value"": ""Nuevo juego""
         },
         {
             ""key"": ""start"",
-            ""value"": ""drgdg""
+            ""value"": ""Inicio""
         },
         {
             ""key"":""player"",
-            ""value"":""Player""
+            ""value"":""Jugador""
         },
         {
             ""key"": ""computer"",
-            ""value"": ""Computer""
+            ""value"": ""Ordenador""
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 max""
+            ""value"": ""{0}/5 máx""
         },
         {
             ""key"":""stop"",
-            ""value"": ""Stop""
+            ""value"": ""Parar""
         },
         {
             ""key"":""continue"",
-            ""value"": ""Continue""
+            ""value"": ""Continuar""
         },
         {
             ""key"":""turnText"",
-            ""value"": ""{0}'s turn""
+            ""value"": ""El turno de {0}""
         },
         {
             ""key"":""winText"",
-            ""value"": ""{0} wins!""
+            ""value"": ""¡{0} gana!""
         },
         {
             ""key"":""results"",
-            ""value"": ""Results""
+            ""value"": ""Resultados""
         },
         {
             ""key"":""restart"",
-            ""value"": ""Restart""
+            ""value"": ""Reiniciar""
         },
         {
             ""key"":""home"",
-            ""value"": ""Home""
+            ""value"": ""Recepción""
         },
         {
             ""key"":""pause"",
-            ""value"": ""Pause""
+            ""value"": ""Pausa""
         },
         {
             ""key"":""resume"",
-            ""value"": ""Resume""
+            ""value"": ""Reanudar""
         },
         {
             ""key"":""rules"",
-            ""value"": ""Rules""
+            ""value"": ""Reglas""
         },
         {
             ""key"":""dicePool"",
-            ""value"": ""Dice pool""
+            ""value"": ""La reserva""
         },
         {
             ""key"":""goodGame"",
-            ""value"": ""Good luck""
+            ""value"": ""Buena suerte""
         },
         {
             ""key"":""rules_0_0"",
-            ""value"": ""Gem Hunt is a dice game where you track corrupted gems to capture them.""
+            ""value"": ""Gem Hunt es un juego de dados en el que puedes rastrear las gemas corruptas para capturarlas.""
         },
         {
             ""key"":""rules_0_1"",
-            ""value"": ""On your turn, 3 dice are taken from the pool and rolled. Each represents a corrupted gem.""
+            ""value"": ""En tu turno, se cogen 3 dados de la reserva y se tira. Cada uno representa una gema corrupta.""
         },
         {
             ""key"":""rules_0_2"",
-            ""value"": ""Green dices are the easiest, orange are medium though and red are the thoughest.""
+            ""value"": ""Los dados verdes son los más fáciles, los naranjas son medianos y los rojos son los más comunes.""
         },
         {
             ""key"":""rules_1_0"",
-            ""value"": ""The dices have 3 symbols:""
+            ""value"": ""Los dados tienen 3 símbolos:""
         },
         {
             ""key"":""rules_1_1"",
-            ""value"": ""Bubble: You caputered the gem, scoring 1 point. There's 3 of them on green dice, 2 on orange and only 1 on red.""
+            ""value"": ""Burbuja: Capturó la gema, anotando un punto. Hay 3 de ellos en los dados verdes, 2 en los naranjas y sólo 1 en los rojos.""
         },
         {
             ""key"":""rules_1_2"",
-            ""value"": ""Claws: The gem fought back! You lose 1 life point. There's 3 of them on red dice, 2 on orange and 1 on green.""
+            ""value"": ""Garras: ¡La gema se defendió! Pierdes un punto de vida. Hay 3 de ellos en los dados rojos, 2 en naranja y 1 en verde.""
         },
         {
             ""key"":""rules_1_3"",
-            ""value"": ""Footprints: The gem escaped. If you choose to continue your hunt, you will re-roll this dice instead of picking a new one. There's 2 of them, no matter the dice color.""
+            ""value"": ""Huellas: La gema escapó. Si eliges continuar tu cacería, volverás a tirar los dados en lugar de elegir uno nuevo. Hay dos de ellos, sin importar el color de los dados.""
         },
         {
             ""key"":""rules_2_0"",
-            ""value"": ""If you lose all your life points, your turn is over and you lose all the points you got this turn. Otherwise, you can choose to stop or to continue the hunt.""
+            ""value"": ""Si pierdes todos tus puntos de vida, tu turno se acaba y pierdes todos los puntos que tienes en ese turno. De lo contrario, puede elegir entre detenerse o continuar la cacería.""
         },
         {
             ""key"":""rules_2_1"",
-            ""value"": ""If you choose to stop, you save your points, you restore your health and the next player's turn begins.""
+            ""value"": ""Si decides parar, guardas tus puntos, recuperas tu salud y comienza el turno del siguiente jugador.""
         },
         {
             ""key"":""rules_2_2"",
-            ""value"": ""If you choose to continue, bubble and claws dice are set aside and new random dice are taken from the pool so you always have 3 dice to roll.""
+            ""value"": ""Si decides continuar, los dados de burbujas y garras se separan y se sacan nuevos dados al azar de la quiniela para que siempre tengas 3 dados para tirar.""
         },
         {
             ""key"":""rules_3_0"",
-            ""value"": ""Keep in mind that re-rolling red dice are more dangerous than green ones. If you only have 1 life point left, maybe you should stop your hunt.""
+            ""value"": ""Ten en cuenta que volver a tirar los dados rojos es más peligroso que los verdes. Si sólo te queda un punto de vida, tal vez deberías dejar de cazar.""
         },
         {
             ""key"":""rules_3_1"",
-            ""value"": ""Same thing if there's only red or orange dice left in the pool. So keep an eye on it.""
+            ""value"": ""Lo mismo si sólo quedan dados rojos o naranjas en la piscina. Así que vigílalo.""
         },
         {
             ""key"":""rules_3_2"",
-            ""value"": ""The first player to have 13 points or more wins the game.""
+            ""value"": ""El primer jugador que tenga 13 puntos o más gana el juego.""
         },
         {
             ""key"":""Steven"",
@@ -603,19 +603,19 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Amethyst"",
-            ""value"": ""Amethyst""
+            ""value"": ""Amatista""
         },
         {
             ""key"":""Pearl"",
-            ""value"": ""Pearl""
+            ""value"": ""Perla""
         },
         {
             ""key"":""Ruby"",
-            ""value"": ""Ruby""
+            ""value"": ""Rubí""
         },
         {
             ""key"":""Sapphire"",
-            ""value"": ""Sapphire""
+            ""value"": ""Zafiro""
         },
         {
             ""key"":""Peridot"",
@@ -623,7 +623,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Lapis"",
-            ""value"": ""Lapis""
+            ""value"": ""Lapislázuli""
         },
         {
             ""key"":""Greg"",
@@ -635,19 +635,19 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Lion"",
-            ""value"": ""Lion""
+            ""value"": ""León""
         },
         {
             ""key"":""Jasper"",
-            ""value"": ""Jasper""
+            ""value"": ""Jaspe""
         },
         {
             ""key"":""Opal"",
-            ""value"": ""Opal""
+            ""value"": ""Ópalo""
         },
         {
             ""key"":""Sugulite"",
-            ""value"": ""Sugulite""
+            ""value"": ""Sugalite""
         },
         {
             ""key"":""Sardonyx"",
@@ -655,11 +655,207 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Alexandrite"",
-            ""value"": ""Alexandrite""
+            ""value"": ""Alejandrita""
         },
         {
             ""key"":""Holo Pearl"",
-            ""value"": ""Holo Pearl""
+            ""value"": ""Holoperla""
+        }
+    ]}";
+
+    private string spanish = @"{
+    ""items"": [
+         {
+            ""key"":""languages"",
+            ""value"": ""Idiomas""
+        },
+        {
+            ""key"":""newGame"",
+            ""value"": ""Nuevo juego""
+        },
+        {
+            ""key"": ""start"",
+            ""value"": ""Inicio""
+        },
+        {
+            ""key"":""player"",
+            ""value"":""Jugador""
+        },
+        {
+            ""key"": ""computer"",
+            ""value"": ""Ordenador""
+        },
+        {
+            ""key"":""counterText"",
+            ""value"": ""{0}/5 máx""
+        },
+        {
+            ""key"":""stop"",
+            ""value"": ""Parar""
+        },
+        {
+            ""key"":""continue"",
+            ""value"": ""Continuar""
+        },
+        {
+            ""key"":""turnText"",
+            ""value"": ""El turno de {0}""
+        },
+        {
+            ""key"":""winText"",
+            ""value"": ""¡{0} gana!""
+        },
+        {
+            ""key"":""results"",
+            ""value"": ""Resultados""
+        },
+        {
+            ""key"":""restart"",
+            ""value"": ""Reiniciar""
+        },
+        {
+            ""key"":""home"",
+            ""value"": ""Recepción""
+        },
+        {
+            ""key"":""pause"",
+            ""value"": ""Pausa""
+        },
+        {
+            ""key"":""resume"",
+            ""value"": ""Reanudar""
+        },
+        {
+            ""key"":""rules"",
+            ""value"": ""Reglas""
+        },
+        {
+            ""key"":""dicePool"",
+            ""value"": ""La reserva""
+        },
+        {
+            ""key"":""goodGame"",
+            ""value"": ""Buena suerte""
+        },
+        {
+            ""key"":""rules_0_0"",
+            ""value"": ""Gem Hunt es un juego de dados en el que puedes rastrear las gemas corruptas para capturarlas.""
+        },
+        {
+            ""key"":""rules_0_1"",
+            ""value"": ""En tu turno, se cogen 3 dados de la reserva y se tira. Cada uno representa una gema corrupta.""
+        },
+        {
+            ""key"":""rules_0_2"",
+            ""value"": ""Los dados verdes son los más fáciles, los naranjas son medianos y los rojos son los más comunes.""
+        },
+        {
+            ""key"":""rules_1_0"",
+            ""value"": ""Los dados tienen 3 símbolos:""
+        },
+        {
+            ""key"":""rules_1_1"",
+            ""value"": ""Burbuja: Capturó la gema, anotando un punto. Hay 3 de ellos en los dados verdes, 2 en los naranjas y sólo 1 en los rojos.""
+        },
+        {
+            ""key"":""rules_1_2"",
+            ""value"": ""Garras: ¡La gema se defendió! Pierdes un punto de vida. Hay 3 de ellos en los dados rojos, 2 en naranja y 1 en verde.""
+        },
+        {
+            ""key"":""rules_1_3"",
+            ""value"": ""Huellas: La gema escapó. Si eliges continuar tu cacería, volverás a tirar los dados en lugar de elegir uno nuevo. Hay dos de ellos, sin importar el color de los dados.""
+        },
+        {
+            ""key"":""rules_2_0"",
+            ""value"": ""Si pierdes todos tus puntos de vida, tu turno se acaba y pierdes todos los puntos que tienes en ese turno. De lo contrario, puede elegir entre detenerse o continuar la cacería.""
+        },
+        {
+            ""key"":""rules_2_1"",
+            ""value"": ""Si decides parar, guardas tus puntos, recuperas tu salud y comienza el turno del siguiente jugador.""
+        },
+        {
+            ""key"":""rules_2_2"",
+            ""value"": ""Si decides continuar, los dados de burbujas y garras se separan y se sacan nuevos dados al azar de la quiniela para que siempre tengas 3 dados para tirar.""
+        },
+        {
+            ""key"":""rules_3_0"",
+            ""value"": ""Ten en cuenta que volver a tirar los dados rojos es más peligroso que los verdes. Si sólo te queda un punto de vida, tal vez deberías dejar de cazar.""
+        },
+        {
+            ""key"":""rules_3_1"",
+            ""value"": ""Lo mismo si sólo quedan dados rojos o naranjas en la piscina. Así que vigílalo.""
+        },
+        {
+            ""key"":""rules_3_2"",
+            ""value"": ""El primer jugador que tenga 13 puntos o más gana el juego.""
+        },
+        {
+            ""key"":""Steven"",
+            ""value"": ""Steven""
+        },
+        {
+            ""key"":""Garnet"",
+            ""value"": ""Garnet""
+        },
+        {
+            ""key"":""Amethyst"",
+            ""value"": ""Amatista""
+        },
+        {
+            ""key"":""Pearl"",
+            ""value"": ""Perla""
+        },
+        {
+            ""key"":""Ruby"",
+            ""value"": ""Rubí""
+        },
+        {
+            ""key"":""Sapphire"",
+            ""value"": ""Zafiro""
+        },
+        {
+            ""key"":""Peridot"",
+            ""value"": ""Peridot""
+        },
+        {
+            ""key"":""Lapis"",
+            ""value"": ""Lapislázuli""
+        },
+        {
+            ""key"":""Greg"",
+            ""value"": ""Greg""
+        },
+        {
+            ""key"":""Connie"",
+            ""value"": ""Connie""
+        },
+        {
+            ""key"":""Lion"",
+            ""value"": ""León""
+        },
+        {
+            ""key"":""Jasper"",
+            ""value"": ""Jaspe""
+        },
+        {
+            ""key"":""Opal"",
+            ""value"": ""Ópalo""
+        },
+        {
+            ""key"":""Sugulite"",
+            ""value"": ""Sugalite""
+        },
+        {
+            ""key"":""Sardonyx"",
+            ""value"": ""Sardonyx""
+        },
+        {
+            ""key"":""Alexandrite"",
+            ""value"": ""Alejandrita""
+        },
+        {
+            ""key"":""Holo Pearl"",
+            ""value"": ""Holoperla""
         }
     ]}";
 }

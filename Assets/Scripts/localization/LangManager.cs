@@ -7,6 +7,8 @@ public class LangManager : MonoBehaviour
 {
     public Button french;
     public Button english;
+    public Button spanish;
+    public Button portuguese;
     public AudioSource audioSource;
 
     private void Start()
@@ -17,6 +19,10 @@ public class LangManager : MonoBehaviour
                 french.onClick.AddListener(delegate { SetLang("french"); });
             if (english != null)
                 english.onClick.AddListener(delegate { SetLang("english"); });
+            if (spanish != null)
+                spanish.onClick.AddListener(delegate { SetLang("spanish"); });
+            if (portuguese != null)
+                portuguese.onClick.AddListener(delegate { SetLang("portuguese"); });
         }
     }
 
@@ -28,6 +34,7 @@ public class LangManager : MonoBehaviour
         LocalizationManager.instance.LoadLocalizedText(lang);
         french.interactable = false;
         english.interactable = false;
+        portuguese.interactable = false;
         StartCoroutine(GameManager.instance.LoadScene("Lobby", true));
     }
 

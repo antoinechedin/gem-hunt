@@ -1,0 +1,196 @@
+{
+    "items": [
+         {
+            "key":"languages",
+            "value": "Idiomas"
+        },
+        {
+            "key":"newGame",
+            "value": "Nuevo Jogada"
+        },
+        {
+            "key": "start",
+            "value": "Começar"
+        },
+        {
+            "key":"player",
+            "value":"Jogador"
+        },
+        {
+            "key": "computer",
+            "value": "IA"
+        },
+        {
+            "key":"counterText",
+            "value": "{0}/5 máx"
+        },
+        {
+            "key":"stop",
+            "value": "Parar"
+        },
+        {
+            "key":"continue",
+            "value": "Continuar"
+        },
+        {
+            "key":"turnText",
+            "value": "Vez de {0}"
+        },
+        {
+            "key":"winText",
+            "value": "Vitória de {0}"
+        },
+        {
+            "key":"results",
+            "value": "Resultados"
+        },
+        {
+            "key":"restart",
+            "value": "Recomeçar"
+        },
+        {
+            "key":"home",
+            "value": "Menu"
+        },
+        {
+            "key":"pause",
+            "value": "Pausa"
+        },
+        {
+            "key":"resume",
+            "value": "Resumo"
+        },
+        {
+            "key":"rules",
+            "value": "Regras"
+        },
+        {
+            "key":"dicePool",
+            "value": "A reserva"
+        },
+        {
+            "key":"goodGame",
+            "value": "Bom jogo"
+        },
+        {
+            "key":"rules_0_0",
+            "value": "Gem Hunt é um jogo de dados onde você tem que capturar gemmas corrompidas."
+        },
+        {
+            "key":"rules_0_1",
+            "value": "No início do seu turno, 3 dados são tirados aleatoriamente da reserva. Cada um representa uma gema corrompida."
+        },
+        {
+            "key":"rules_0_2",
+            "value": "Os dados verdes são os mais fáceis, os laranjas são os médios e os vermelhos os mais difíceis."
+        },
+        {
+            "key":"rules_1_0",
+            "value": "Os dados têm 3 símbolos:"
+        },
+        {
+            "key":"rules_1_1",
+            "value": "Bolha: Você capturou a gema e marcou 1 ponto. Há 3 nos dados verdes, 2 nas laranjas e 1 nos vermelhos."
+        },
+        {
+            "key":"rules_1_2",
+            "value": "Garras: Foi atingido! Perdeste 1 ponto de vida. Há 3 nos dados vermelhos, 2 nas laranjas e 1 nos verdes. "
+        },
+        {
+            "key":"rules_1_3",
+            "value": "Pegadas: A gema escapou. Se você escolher continuar sua caça, você irá reiniciá-la invés de tomar uma nova. Há dois deles, qualquer que seja a cor do dado."
+        },
+        {
+            "key":"rules_2_0",
+            "value": "Se você perder todos os seus pontos de saúde, a sua vez termina e você perde os pontos que ganhou neste turno. Caso contrário, pode optar por parar ou continuar a caça."
+        },
+        {
+            "key":"rules_2_1",
+            "value": "Se escolheres parar, guardas os teus pontos, recuperas os teus pontos de saúde e o próximo jogador começa a sua vez."
+        },
+        {
+            "key":"rules_2_2",
+            "value": "Se você optar por continuar, as bolhas e garras são removidas e novos dados são tirados da reserva para sempre ter 3 dados para jogar."
+        },
+        {
+            "key":"rules_3_0",
+            "value": "Tenha em conta que lançar de novo um dado vermelho é mais arriscado do que lançar um dado verde. Se só te resta um ponto de vida, talvez devesses parar de caçar."
+        },
+        {
+            "key":"rules_3_1",
+            "value": "Preste também atenção à reserva. É arriscado continuar se apenas sobrar dados vermelhos ou laranjas."
+        },
+        {
+            "key":"rules_3_2",
+            "value": "O primeiro jogador de 13 pontos ganha o jogo."
+        },
+        {
+            "key":"Steven",
+            "value": "Steven"
+        },
+        {
+            "key":"Garnet",
+            "value": "Garnet"
+        },
+        {
+            "key":"Amethyst",
+            "value": "Ametista"
+        },
+        {
+            "key":"Pearl",
+            "value": "Pérola"
+        },
+        {
+            "key":"Ruby",
+            "value": "Rubi"
+        },
+        {
+            "key":"Sapphire",
+            "value": "Safira"
+        },
+        {
+            "key":"Peridot",
+            "value": "Peridot"
+        },
+        {
+            "key":"Lapis",
+            "value": "Lapis"
+        },
+        {
+            "key":"Greg",
+            "value": "Greg"
+        },
+        {
+            "key":"Connie",
+            "value": "Connie"
+        },
+        {
+            "key":"Lion",
+            "value": "Leão"
+        },
+        {
+            "key":"Jasper",
+            "value": "Jasper"
+        },
+        {
+            "key":"Opal",
+            "value": "Opal"
+        },
+        {
+            "key":"Sugulite",
+            "value": "Sugalite"
+        },
+        {
+            "key":"Sardonyx",
+            "value": "Sardonyx"
+        },
+        {
+            "key":"Alexandrite",
+            "value": "Alexandrite"
+        },
+        {
+            "key":"Holo Pearl",
+            "value": "Holo-Pérola"
+        }
+    ]
+}

@@ -476,19 +476,19 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""newGame"",
-            ""value"": ""Nuevo juego""
+            ""value"": ""Nuevo Jogada""
         },
         {
             ""key"": ""start"",
-            ""value"": ""Inicio""
+            ""value"": ""Começar""
         },
         {
             ""key"":""player"",
-            ""value"":""Jugador""
+            ""value"":""Jogador""
         },
         {
             ""key"": ""computer"",
-            ""value"": ""Ordenador""
+            ""value"": ""IA""
         },
         {
             ""key"":""counterText"",
@@ -504,11 +504,11 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""turnText"",
-            ""value"": ""El turno de {0}""
+            ""value"": ""Vez de {0}""
         },
         {
             ""key"":""winText"",
-            ""value"": ""¡{0} gana!""
+            ""value"": ""Vitória de {0}""
         },
         {
             ""key"":""results"",
@@ -516,11 +516,11 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""restart"",
-            ""value"": ""Reiniciar""
+            ""value"": ""Recomeçar""
         },
         {
             ""key"":""home"",
-            ""value"": ""Recepción""
+            ""value"": ""Menu""
         },
         {
             ""key"":""pause"",
@@ -528,71 +528,71 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""resume"",
-            ""value"": ""Reanudar""
+            ""value"": ""Resumo""
         },
         {
             ""key"":""rules"",
-            ""value"": ""Reglas""
+            ""value"": ""Regras""
         },
         {
             ""key"":""dicePool"",
-            ""value"": ""La reserva""
+            ""value"": ""A reserva""
         },
         {
             ""key"":""goodGame"",
-            ""value"": ""Buena suerte""
+            ""value"": ""Bom jogo""
         },
         {
             ""key"":""rules_0_0"",
-            ""value"": ""Gem Hunt es un juego de dados en el que puedes rastrear las gemas corruptas para capturarlas.""
+            ""value"": ""Gem Hunt é um jogo de dados onde você tem que capturar gemmas corrompidas.""
         },
         {
             ""key"":""rules_0_1"",
-            ""value"": ""En tu turno, se cogen 3 dados de la reserva y se tira. Cada uno representa una gema corrupta.""
+            ""value"": ""No início do seu turno, 3 dados são tirados aleatoriamente da reserva. Cada um representa uma gema corrompida.""
         },
         {
             ""key"":""rules_0_2"",
-            ""value"": ""Los dados verdes son los más fáciles, los naranjas son medianos y los rojos son los más comunes.""
+            ""value"": ""Os dados verdes são os mais fáceis, os laranjas são os médios e os vermelhos os mais difíceis.""
         },
         {
             ""key"":""rules_1_0"",
-            ""value"": ""Los dados tienen 3 símbolos:""
+            ""value"": ""Os dados têm 3 símbolos:""
         },
         {
             ""key"":""rules_1_1"",
-            ""value"": ""Burbuja: Capturó la gema, anotando un punto. Hay 3 de ellos en los dados verdes, 2 en los naranjas y sólo 1 en los rojos.""
+            ""value"": ""Bolha: Você capturou a gema e marcou 1 ponto. Há 3 nos dados verdes, 2 nas laranjas e 1 nos vermelhos.""
         },
         {
             ""key"":""rules_1_2"",
-            ""value"": ""Garras: ¡La gema se defendió! Pierdes un punto de vida. Hay 3 de ellos en los dados rojos, 2 en naranja y 1 en verde.""
+            ""value"": ""Garras: Foi atingido! Perdeste 1 ponto de vida. Há 3 nos dados vermelhos, 2 nas laranjas e 1 nos verdes. ""
         },
         {
             ""key"":""rules_1_3"",
-            ""value"": ""Huellas: La gema escapó. Si eliges continuar tu cacería, volverás a tirar los dados en lugar de elegir uno nuevo. Hay dos de ellos, sin importar el color de los dados.""
+            ""value"": ""Pegadas: A gema escapou. Se você escolher continuar sua caça, você irá reiniciá-la invés de tomar uma nova. Há dois deles, qualquer que seja a cor do dado.""
         },
         {
             ""key"":""rules_2_0"",
-            ""value"": ""Si pierdes todos tus puntos de vida, tu turno se acaba y pierdes todos los puntos que tienes en ese turno. De lo contrario, puede elegir entre detenerse o continuar la cacería.""
+            ""value"": ""Se você perder todos os seus pontos de saúde, a sua vez termina e você perde os pontos que ganhou neste turno. Caso contrário, pode optar por parar ou continuar a caça.""
         },
         {
             ""key"":""rules_2_1"",
-            ""value"": ""Si decides parar, guardas tus puntos, recuperas tu salud y comienza el turno del siguiente jugador.""
+            ""value"": ""Se escolheres parar, guardas os teus pontos, recuperas os teus pontos de saúde e o próximo jogador começa a sua vez.""
         },
         {
             ""key"":""rules_2_2"",
-            ""value"": ""Si decides continuar, los dados de burbujas y garras se separan y se sacan nuevos dados al azar de la quiniela para que siempre tengas 3 dados para tirar.""
+            ""value"": ""Se você optar por continuar, as bolhas e garras são removidas e novos dados são tirados da reserva para sempre ter 3 dados para jogar.""
         },
         {
             ""key"":""rules_3_0"",
-            ""value"": ""Ten en cuenta que volver a tirar los dados rojos es más peligroso que los verdes. Si sólo te queda un punto de vida, tal vez deberías dejar de cazar.""
+            ""value"": ""Tenha em conta que lançar de novo um dado vermelho é mais arriscado do que lançar um dado verde. Se só te resta um ponto de vida, talvez devesses parar de caçar.""
         },
         {
             ""key"":""rules_3_1"",
-            ""value"": ""Lo mismo si sólo quedan dados rojos o naranjas en la piscina. Así que vigílalo.""
+            ""value"": ""Preste também atenção à reserva. É arriscado continuar se apenas sobrar dados vermelhos ou laranjas.""
         },
         {
             ""key"":""rules_3_2"",
-            ""value"": ""El primer jugador que tenga 13 puntos o más gana el juego.""
+            ""value"": ""O primeiro jogador de 13 pontos ganha o jogo.""
         },
         {
             ""key"":""Steven"",
@@ -604,19 +604,19 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Amethyst"",
-            ""value"": ""Amatista""
+            ""value"": ""Ametista""
         },
         {
             ""key"":""Pearl"",
-            ""value"": ""Perla""
+            ""value"": ""Pérola""
         },
         {
             ""key"":""Ruby"",
-            ""value"": ""Rubí""
+            ""value"": ""Rubi""
         },
         {
             ""key"":""Sapphire"",
-            ""value"": ""Zafiro""
+            ""value"": ""Safira""
         },
         {
             ""key"":""Peridot"",
@@ -624,7 +624,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Lapis"",
-            ""value"": ""Lapislázuli""
+            ""value"": ""Lapis""
         },
         {
             ""key"":""Greg"",
@@ -636,15 +636,15 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Lion"",
-            ""value"": ""León""
+            ""value"": ""Leão""
         },
         {
             ""key"":""Jasper"",
-            ""value"": ""Jaspe""
+            ""value"": ""Jasper""
         },
         {
             ""key"":""Opal"",
-            ""value"": ""Ópalo""
+            ""value"": ""Opal""
         },
         {
             ""key"":""Sugulite"",
@@ -656,11 +656,11 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Alexandrite"",
-            ""value"": ""Alejandrita""
+            ""value"": ""Alexandrite""
         },
         {
             ""key"":""Holo Pearl"",
-            ""value"": ""Holoperla""
+            ""value"": ""Holo-Pérola""
         }
     ]}";
 

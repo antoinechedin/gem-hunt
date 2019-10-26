@@ -197,7 +197,7 @@ public class BoardManager : MonoBehaviour
         foreach (Dice dice in dices)
         {
             bool grow = firstRoll ? true : dice.GetFaceIndex() != 1;
-            StartCoroutine(dice.Roll(grow));
+            StartCoroutine(dice.Roll(grow, type));
             playerList[currentPlayer].GetCharacter().gameStat.AddDiceFace(dice.GetFaceIndex());
         }
 
@@ -276,7 +276,7 @@ public class BoardManager : MonoBehaviour
                     StopAction(true);
                 else if (playerList[currentPlayer].GetTurnScore() < 3)
                     ContinueAction(true);
-                else if (playerList[currentPlayer].GetTurnScore() >= 3 && playerList[currentPlayer].GetTurnScore() <= 5)
+                else if (playerList[currentPlayer].GetTurnScore() >= 2 && playerList[currentPlayer].GetTurnScore() <= 4)
                 {
                     if ((Random.Range(0, 2) == 0))
                         ContinueAction(true);

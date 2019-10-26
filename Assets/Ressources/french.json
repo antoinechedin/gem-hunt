@@ -70,7 +70,7 @@
         },
         {
             "key":"goodGame",
-            "value": "Bonne partie"
+            "value": "Bonne chance"
         },
         {
             "key":"rules_0_0",
@@ -123,6 +123,73 @@
         {
             "key":"rules_3_2",
             "value": "Le premier joueur à 13 points gagne la partie."
+        }
+            "key":"Steven",
+            "value": "Steven"
+        },
+        {
+            "key":"Garnet",
+            "value": "Grenat"
+        },
+        {
+            "key":"Amethyst",
+            "value": "Améthyste"
+        },
+        {
+            "key":"Pearl",
+            "value": "Perle"
+        },
+        {
+            "key":"Ruby",
+            "value": "Rubis"
+        },
+        {
+            "key":"Sapphire",
+            "value": "Saphire"
+        },
+        {
+            "key":"Peridot",
+            "value": "Péridot"
+        },
+        {
+            "key":"Lapis",
+            "value": "Lapis"
+        },
+        {
+            "key":"Greg",
+            "value": "Greg"
+        },
+        {
+            "key":"Connie",
+            "value": "Connie"
+        },
+        {
+            "key":"Lion",
+            "value": "Lion"
+        },
+        {
+            "key":"Jasper",
+            "value": "Jaspe"
+        },
+        {
+            "key":"Opal",
+            "value": "Opale"
+        },
+        {
+            "key":"Sugulite",
+            "value": "Lavulite"
+        },
+        {
+            "key":"Sardonyx",
+            "value": "Sardonyx"
+        },
+        {
+            "key":"Alexandrite",
+            "value": "Alexandrite"
+        },
+        {
+            "key":"Holo Pearl",
+            "value": "Holo Perle"
         }
     ]
 }

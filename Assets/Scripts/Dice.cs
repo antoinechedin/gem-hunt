@@ -63,12 +63,22 @@ public class Dice : MonoBehaviour
         }
     }
 
-    public IEnumerator Roll(bool grow)
+    public IEnumerator Roll(bool grow, string type)
     {
         rb2D.bodyType = RigidbodyType2D.Dynamic;
         bc2D.enabled = true;
 
-        faceIndex = faceArray[Random.Range(0, faceArray.Length)];
+        if (type == "player")
+        {
+            faceIndex = faceArray[Random.Range(0, faceArray.Length)];
+        }
+        else
+        {
+            if (Random.Range(0, 7) == 0)
+                faceIndex = 2;
+            else
+                faceIndex = faceArray[Random.Range(0, faceArray.Length)];
+        }
         spriteRenderer.sprite = spriteDicrionary[color][faceIndex];
         spriteRenderer.color = new Color(1, 1, 1);
 

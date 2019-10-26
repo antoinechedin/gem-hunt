@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - Motion Blur
+  - 
   - 
   - 
   - 
@@ -39,20 +39,20 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 2718221207
+    uniqueID: 1016374361
     locked: 0
   - name: Shadow
-    uniqueID: 3440599653
+    uniqueID: 3371849977
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Center
-    uniqueID: 3384797075
+    uniqueID: 1508489847
     locked: 0
   - name: Effect
-    uniqueID: 1714520403
+    uniqueID: 4176818075
     locked: 0
   - name: UI
-    uniqueID: 1568379359
+    uniqueID: 2588328941
     locked: 0

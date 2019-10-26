@@ -1,12 +1,32 @@
-![Gem Hunt banner](doc/readme-banner.png "Gem Hunt banner")
+![banner](docs/images/banner.png)
 
-# Gem Hunt : a Steven Universe dice game.
+# Gem Hunt
 
 Play as Garnet, Amethyst and Pearl, and Steven, and even more in this strategic
 dice game where you hunt and capture corrupted gems. Up to 5 players, alone
 against the AI or with friends on the same device.
 
-## How to play:
+## Installation
+
+Just download the app directly from Google Play Store
+https://play.google.com/store/apps/details?id=com.crystalgems.gemhunt
+
+If you want to build from source, download the repository and open the project
+with [Unity](https://unity.com/)
+
+## Background
+
+The first version of this game was made in Android during my computer science
+bachelor's degree. There were no animations and no tutorial making the game very
+unclear and barely playable. A few years later, I received an email from a user
+who really wanted to understand how to play, and it gave me the strength to take
+over the project. I started over again from scratch, but this time with Unity
+since it was a good opportunity to learn how to use the engine.
+
+Now there's a tutorial, new animations and art and the game is translated in
+english, french, spanish and portugese.
+
+## How to play
 
 Gem Hunt is a dice game where you track corrupted gems to capture them. On your
 turn, 3 dice are taken from the pool and rolled. Each represents a corrupted
@@ -35,5 +55,3 @@ only have 1 life point left, maybe you should stop your hunt. Same thing if
 there's only red or orange dice left in the pool. So keep an eye on it
 
 The first player to have 13 points or more wins the game.
-
-Good luck.

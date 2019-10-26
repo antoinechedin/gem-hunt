@@ -1,7 +1,5 @@
 ![banner](docs/images/banner.png)
 
-# Gem Hunt
-
 Play as Garnet, Amethyst and Pearl, and Steven, and even more in this strategic
 dice game where you hunt and capture corrupted gems. Up to 5 players, alone
 against the AI or with friends on the same device.

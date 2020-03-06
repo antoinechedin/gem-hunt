@@ -1,13 +1,14 @@
 ![banner](docs/images/banner.png)
 
 Play as Garnet, Amethyst and Pearl, and Steven, and even more in this strategic
-dice game where you hunt and capture corrupted gems. Up to 5 players, alone
-against the AI or with friends on the same device.
+dice game where you hunt and capture corrupted gems. Up to 5 players, with your
+friends or against the AI on the same device.
 
 ## Installation
 
-Just download the app directly from Google Play Store
-https://play.google.com/store/apps/details?id=com.crystalgems.gemhunt
+Just download the app directly from [Google Play Store](https://play.google.com/store/apps/details?id=com.crystalgems.gemhunt)
+
+You can also directly play on [Itch.io](https://antoinechedin.itch.io/gem-hunt)
 
 If you want to build from source, download the repository and open the project
 with [Unity](https://unity.com/)
@@ -17,8 +18,8 @@ with [Unity](https://unity.com/)
 The first version of this game was made in Android during my computer science
 bachelor's degree. There were no animations and no tutorial making the game very
 unclear and barely playable. A few years later, I received an email from a user
-who really wanted to understand how to play, and it gave me the strength to take
-over the project. I started over again from scratch, but this time with Unity
+who really wanted to understand how to play, and it gave me the motivation to
+take over the project. I started over again from scratch, but this time with Unity
 since it was a good opportunity to learn how to use the engine.
 
 Now there's a tutorial, new animations and art and the game is translated in

@@ -36,6 +36,8 @@ public class LobbyManager : MonoBehaviour
         computerPlus.onClick.AddListener(AddOneComputer);
         computerMinus.onClick.AddListener(RemoveOneComputer);
 
+        selectionScreen.GetComponent<Button>().onClick.AddListener(delegate { StartCoroutine(SelectCharacterAt(-1)); });
+
         for (int i = 0; i < playerSelectors.Length; i++)
         {
             CharacterSelector cs = playerSelectors[i];

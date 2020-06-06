@@ -3,25 +3,33 @@ guid: bb885211e4bc1124abbc5f28103a6898
 TextureImporter:
   fileIDToRecycleName:
     21300000: steven
-    21300002: garnet
-    21300004: amethyst
-    21300006: pearl
-    21300008: ruby
-    21300010: shappire
-    21300012: peridot
-    21300014: lapis
-    21300016: greg
-    21300018: connie
-    21300020: lion
-    21300022: jasper
-    21300024: opal
-    21300026: sugulite
-    21300028: sardonyx
+    21300002: connie
+    21300004: peridot
+    21300006: opal
+    21300008: garnet
+    21300010: stevonnie
+    21300012: lapis
+    21300014: sardonyx
+    21300016: pearl
+    21300018: ruby
+    21300020: jasper
+    21300022: sugilite
+    21300024: amethyst
+    21300026: sapphire
+    21300028: bismuth
     21300030: alexandrite
     21300032: holo1
     21300034: holo2
     21300036: holo3
     21300038: holo4
+    21300040: smoky
+    21300042: white
+    21300044: raindow
+    21300046: yellow
+    21300048: sunstone
+    21300050: blue
+    21300052: obsidian
+    21300054: spinel
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -129,10 +137,10 @@ TextureImporter:
       name: steven
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 192
-        height: 192
+        x: 3
+        y: 802
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,13 +154,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: garnet
+      name: connie
       rect:
         serializedVersion: 2
-        x: 192
-        y: 768
-        width: 192
-        height: 192
+        x: 202
+        y: 802
+        width: 196
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,13 +174,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: amethyst
+      name: peridot
       rect:
         serializedVersion: 2
-        x: 384
-        y: 768
-        width: 192
-        height: 192
+        x: 403
+        y: 802
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,13 +194,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pearl
+      name: opal
       rect:
         serializedVersion: 2
-        x: 576
-        y: 768
-        width: 192
-        height: 192
+        x: 601
+        y: 805
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,13 +214,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ruby
+      name: garnet
       rect:
         serializedVersion: 2
-        x: 0
-        y: 576
-        width: 192
-        height: 192
+        x: 1
+        y: 603
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,13 +234,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shappire
+      name: stevonnie
       rect:
         serializedVersion: 2
-        x: 192
-        y: 576
-        width: 192
-        height: 192
+        x: 202
+        y: 601
+        width: 196
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,13 +254,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: peridot
+      name: lapis
       rect:
         serializedVersion: 2
-        x: 384
-        y: 576
-        width: 192
-        height: 192
+        x: 403
+        y: 603
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,13 +274,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lapis
+      name: sardonyx
       rect:
         serializedVersion: 2
-        x: 576
-        y: 576
-        width: 192
-        height: 192
+        x: 603
+        y: 602
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,13 +294,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: greg
+      name: pearl
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
-        width: 192
-        height: 192
+        x: 3
+        y: 403
+        width: 194
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,13 +314,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: connie
+      name: ruby
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
-        width: 192
-        height: 192
+        x: 202
+        y: 403
+        width: 196
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,13 +334,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lion
+      name: jasper
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
-        width: 192
-        height: 192
+        x: 403
+        y: 403
+        width: 194
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,13 +354,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jasper
+      name: sugilite
       rect:
         serializedVersion: 2
-        x: 576
-        y: 384
-        width: 192
-        height: 192
+        x: 603
+        y: 403
+        width: 194
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,13 +374,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: opal
+      name: amethyst
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 192
-        height: 192
+        x: 3
+        y: 202
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,13 +394,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sugulite
+      name: sapphire
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 192
-        height: 192
+        x: 205
+        y: 200
+        width: 196
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,13 +414,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sardonyx
+      name: bismuth
       rect:
         serializedVersion: 2
-        x: 384
-        y: 192
-        width: 192
-        height: 192
+        x: 403
+        y: 202
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -429,10 +437,10 @@ TextureImporter:
       name: alexandrite
       rect:
         serializedVersion: 2
-        x: 576
-        y: 192
-        width: 192
-        height: 192
+        x: 603
+        y: 202
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +457,10 @@ TextureImporter:
       name: holo1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 192
-        height: 192
+        x: 3
+        y: 3
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,10 +477,10 @@ TextureImporter:
       name: holo2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 192
-        height: 192
+        x: 202
+        y: 3
+        width: 196
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,10 +497,10 @@ TextureImporter:
       name: holo3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 192
-        height: 192
+        x: 403
+        y: 3
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,10 +517,10 @@ TextureImporter:
       name: holo4
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0
-        width: 192
-        height: 192
+        x: 603
+        y: 1
+        width: 194
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,6 +529,166 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 59671db8db21d914e9a312168e3be77b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoky
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 802
+        width: 196
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32863bb10dee8ee4fbc0e43413310da2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 802
+        width: 194
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a08bb8935a8504f8e3789cd6625a59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raindow
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 603
+        width: 196
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b0c91d7c2838146b46040b0d2a88a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 603
+        width: 194
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49cb7af0cd734e4d808845c5c501cc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunstone
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 403
+        width: 196
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb198578cdc293468bbdd78117c6c8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 403
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a093d1c77550d2b4aa86a87551300692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obsidian
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 202
+        width: 196
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a280d6075e9b7949b813d1d80c82400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spinel
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 202
+        width: 194
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96bc45d9af3c244c9acd49788a369e9
       vertices: []
       indices: 
       edges: []

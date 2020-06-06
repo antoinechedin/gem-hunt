@@ -495,6 +495,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5961283575726222818}
     m_Modifications:
+    - target: {fileID: 5424073415064086973, guid: de8d442d95407874e902f89b690dce5f,
+        type: 3}
+      propertyPath: m_Name
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 2438308925371979218, guid: de8d442d95407874e902f89b690dce5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -614,11 +619,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.1556888
-      objectReference: {fileID: 0}
-    - target: {fileID: 5424073415064086973, guid: de8d442d95407874e902f89b690dce5f,
-        type: 3}
-      propertyPath: m_Name
-      value: Restart
       objectReference: {fileID: 0}
     - target: {fileID: 1006478847082732753, guid: de8d442d95407874e902f89b690dce5f,
         type: 3}
@@ -1469,6 +1469,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5961283575726222818}
     m_Modifications:
+    - target: {fileID: 5424073415064086973, guid: de8d442d95407874e902f89b690dce5f,
+        type: 3}
+      propertyPath: m_Name
+      value: Home
+      objectReference: {fileID: 0}
     - target: {fileID: 2438308925371979218, guid: de8d442d95407874e902f89b690dce5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1588,11 +1593,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.1556888
-      objectReference: {fileID: 0}
-    - target: {fileID: 5424073415064086973, guid: de8d442d95407874e902f89b690dce5f,
-        type: 3}
-      propertyPath: m_Name
-      value: Home
       objectReference: {fileID: 0}
     - target: {fileID: 1006478847082732753, guid: de8d442d95407874e902f89b690dce5f,
         type: 3}
@@ -4685,6 +4685,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5961283575726222818}
     m_Modifications:
+    - target: {fileID: 60521308799068837, guid: 927d352b0c174ed4aa84dd8b2407ae29,
+        type: 3}
+      propertyPath: m_Name
+      value: ResultsTitle
+      objectReference: {fileID: 0}
     - target: {fileID: 6231122790482221591, guid: 927d352b0c174ed4aa84dd8b2407ae29,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -4709,11 +4714,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Results
-      objectReference: {fileID: 0}
-    - target: {fileID: 60521308799068837, guid: 927d352b0c174ed4aa84dd8b2407ae29,
-        type: 3}
-      propertyPath: m_Name
-      value: ResultsTitle
       objectReference: {fileID: 0}
     - target: {fileID: 7658284080407090890, guid: 927d352b0c174ed4aa84dd8b2407ae29,
         type: 3}

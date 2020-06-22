@@ -1,8 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
-using UnityEngine.Networking;
 
 public class LocalizationManager : MonoBehaviour
 {
@@ -16,7 +13,6 @@ public class LocalizationManager : MonoBehaviour
     private bool isReady = false;
     private string missingTextString = "Localized text not found";
 
-    // Use this for initialization
     void Awake()
     {
         if (instance == null)
@@ -34,6 +30,7 @@ public class LocalizationManager : MonoBehaviour
         languages.Add("english", english);
         languages.Add("spanish", spanish);
         languages.Add("portuguese", portuguese);
+        languages.Add("russian", russian);
     }
 
     public void UpdateAllText()
@@ -68,7 +65,6 @@ public class LocalizationManager : MonoBehaviour
         }
 
         return result;
-
     }
 
     public bool GetIsReady()
@@ -255,7 +251,7 @@ public class LocalizationManager : MonoBehaviour
             ""value"": ""Opale""
         },
         {
-            ""key"":""Sugulite"",
+            ""key"":""Sugilite"",
             ""value"": ""Lavulite""
         },
         {
@@ -269,6 +265,46 @@ public class LocalizationManager : MonoBehaviour
         {
             ""key"":""Holo Pearl"",
             ""value"": ""Holo Perle""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Bismuth""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Stevonie""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Quartz Fumé ""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Arc-en-ciel""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Pierre de Soleil""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Obsidienne""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""Blanc""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Jaune""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Bleu""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Spinelle""
         }
     ]}";
 
@@ -312,7 +348,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""winText"",
-            ""value"": ""{0} wins!""
+            ""value"": ""{0} won!""
         },
         {
             ""key"":""results"",
@@ -451,8 +487,8 @@ public class LocalizationManager : MonoBehaviour
             ""value"": ""Opal""
         },
         {
-            ""key"":""Sugulite"",
-            ""value"": ""Sugulite""
+            ""key"":""Sugilite"",
+            ""value"": ""Sugilite""
         },
         {
             ""key"":""Sardonyx"",
@@ -465,6 +501,46 @@ public class LocalizationManager : MonoBehaviour
         {
             ""key"":""Holo Pearl"",
             ""value"": ""Holo Pearl""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Bismuth""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Stevonie""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Smoky ""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Rainbow""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Sunstone""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Obsidian""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""White""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Yellow""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Blue""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Spinel""
         }
     ]}";
 
@@ -647,8 +723,8 @@ public class LocalizationManager : MonoBehaviour
             ""value"": ""Opal""
         },
         {
-            ""key"":""Sugulite"",
-            ""value"": ""Sugalite""
+            ""key"":""Sugilite"",
+            ""value"": ""Sugilite""
         },
         {
             ""key"":""Sardonyx"",
@@ -661,6 +737,46 @@ public class LocalizationManager : MonoBehaviour
         {
             ""key"":""Holo Pearl"",
             ""value"": ""Holo-Pérola""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Bismuto""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Stevonnie""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Quartzo Fumê""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Arco-Íris""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Pedra do Sol""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Obsidiana""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""Branco""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Amarelo""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Azul""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Spinela""
         }
     ]}";
 
@@ -843,7 +959,7 @@ public class LocalizationManager : MonoBehaviour
             ""value"": ""Ópalo""
         },
         {
-            ""key"":""Sugulite"",
+            ""key"":""Sugilite"",
             ""value"": ""Sugalite""
         },
         {
@@ -857,6 +973,282 @@ public class LocalizationManager : MonoBehaviour
         {
             ""key"":""Holo Pearl"",
             ""value"": ""Holoperla""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Bismuto""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Stevonie""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Smoky ""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Arcoíris""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Sunstone""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Obsidiana""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""Blanco""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Amarillo""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Azul""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Espinela""
+        }
+    ]}";
+
+    private string russian = @"{
+    ""items"": [
+         {
+            ""key"":""languages"",
+            ""value"": ""Язык""
+        },
+        {
+            ""key"":""newGame"",
+            ""value"": ""Новая игра""
+        },
+        {
+            ""key"": ""start"",
+            ""value"": ""Начать""
+        },
+        {
+            ""key"":""player"",
+            ""value"":""Игрок""
+        },
+        {
+            ""key"": ""computer"",
+            ""value"": ""Компьютер""
+        },
+        {
+            ""key"":""counterText"",
+            ""value"": ""{0}/5 mакс""
+        },
+        {
+            ""key"":""stop"",
+            ""value"": ""Стоп""
+        },
+        {
+            ""key"":""continue"",
+            ""value"": ""Продолжить""
+        },
+        {
+            ""key"":""turnText"",
+            ""value"": ""Ход {0}""
+        },
+        {
+            ""key"":""winText"",
+            ""value"": ""{0} выйграл!""
+        },
+        {
+            ""key"":""results"",
+            ""value"": ""Результаты""
+        },
+        {
+            ""key"":""restart"",
+            ""value"": ""Повтор""
+        },
+        {
+            ""key"":""home"",
+            ""value"": ""На главную""
+        },
+        {
+            ""key"":""pause"",
+            ""value"": ""Пауза""
+        },
+        {
+            ""key"":""resume"",
+            ""value"": ""Продолжить""
+        },
+        {
+            ""key"":""rules"",
+            ""value"": ""Правила""
+        },
+        {
+            ""key"":""dicePool"",
+            ""value"": ""Игра в кости""
+        },
+        {
+            ""key"":""goodGame"",
+            ""value"": ""Удачи!""
+        },
+        {
+            ""key"":""rules_0_0"",
+            ""value"": ""Gem Hunt - это игра в кости, в которой вы Испорченые самоцветы, чтобы поймать их.""
+        },
+        {
+            ""key"":""rules_0_1"",
+            ""value"": ""В свою очередь кидаются 3 кубика. Каждый из них представляет собой испорченный драгоценный камень.""
+        },
+        {
+            ""key"":""rules_0_2"",
+            ""value"": ""Зеленые кубики-самые легкие, оранжевые-средние, а красные-сложный.""
+        },
+        {
+            ""key"":""rules_1_0"",
+            ""value"": ""У кубиков 3 символа:""
+        },
+        {
+            ""key"":""rules_1_1"",
+            ""value"": ""Пузырь: вы захватили самоцвет, набрав 1 очко. На зеленом кубике их 3, на оранжевом-2 и только на Красном-1.""
+        },
+        {
+            ""key"":""rules_1_2"",
+            ""value"": ""Когти: Атака испорченого самоцвета! Вы теряете 1 очко жизни. Челюсти есть на 3 красных кубиках, 2 на оранжевых и 1 на зеленых.""
+        },
+        {
+            ""key"":""rules_1_3"",
+            ""value"": ""Следы: Испорченый самоцвет сбежал. Если вы решите продолжить свою охоту, вы снова бросите эту кость вместо того, чтобы выбрать новую. Всего их 2, независимо от цвета кости.""
+        },
+        {
+            ""key"":""rules_2_0"",
+            ""value"": ""Если вы потеряете все сердечки, ваш ход закончится и вы потеряете все очки, которые получили в этом ходе. В любом случае вы можете остановить, или продолжить охоту.""
+        },
+        {
+            ""key"":""rules_2_1"",
+            ""value"": ""Если вы решите остановиться, вы сохраняете свои очки, восстанавливаете свое здоровье и ждете своего следующего хода.""
+        },
+        {
+            ""key"":""rules_2_2"",
+            ""value"": ""Если вы решите продолжить, кости заменяются новыми случайными костями. Так что вы всегда бросаете 3 кости.""
+        },
+        {
+            ""key"":""rules_3_0"",
+            ""value"": ""Имейте в виду, что повторное бросание красных кубиков более опасно, чем зеленых. Если у вас осталось только 1 сердечко,то возможно вам следует прекратить свою охоту.""
+        },
+        {
+            ""key"":""rules_3_1"",
+            ""value"": ""То же самое, если после броска остались только красные или оранжевые кости. Будь осторожен.""
+        },
+        {
+            ""key"":""rules_3_2"",
+            ""value"": ""Если игрок собирает 13 очков и больше,чем другие игроки,то он побеждает""
+        },
+        {
+            ""key"":""Steven"",
+            ""value"": ""Стивена""
+        },
+        {
+            ""key"":""Garnet"",
+            ""value"": ""Гранат""
+        },
+        {
+            ""key"":""Amethyst"",
+            ""value"": ""Аметист""
+        },
+        {
+            ""key"":""Pearl"",
+            ""value"": ""Жемчуг""
+        },
+        {
+            ""key"":""Ruby"",
+            ""value"": ""Рубин""
+        },
+        {
+            ""key"":""Sapphire"",
+            ""value"": ""Сапфир""
+        },
+        {
+            ""key"":""Peridot"",
+            ""value"": ""Перидот""
+        },
+        {
+            ""key"":""Lapis"",
+            ""value"": ""Ляпис""
+        },
+        {
+            ""key"":""Greg"",
+            ""value"": ""Грега""
+        },
+        {
+            ""key"":""Connie"",
+            ""value"": ""Конни""
+        },
+        {
+            ""key"":""Lion"",
+            ""value"": ""Льва""
+        },
+        {
+            ""key"":""Jasper"",
+            ""value"": ""Джаспер""
+        },
+        {
+            ""key"":""Opal"",
+            ""value"": ""Опала""
+        },
+        {
+            ""key"":""Sugilite"",
+            ""value"": ""Сагилит""
+        },
+        {
+            ""key"":""Sardonyx"",
+            ""value"": ""Сардоникс""
+        },
+        {
+            ""key"":""Alexandrite"",
+            ""value"": ""Александрит""
+        },
+        {
+            ""key"":""Holo Pearl"",
+            ""value"": ""Голограммы Жемчуг""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Висмут""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Стивонни""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Дымчатого ""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Радужного""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Камня Солнца""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Обсидиана""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""Белого""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Желтого""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Синего""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Спинел""
         }
     ]}";
 }

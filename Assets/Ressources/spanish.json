@@ -177,7 +177,7 @@
             "value": "Ópalo"
         },
         {
-            "key":"Sugulite",
+            "key":"Sugilite",
             "value": "Sugalite"
         },
         {
@@ -191,6 +191,46 @@
         {
             "key":"Holo Pearl",
             "value": "Holoperla"
+        },
+        {
+            "key":"Bismuth",
+            "value": "Bismuto"
+        },
+        {
+            "key":"Stevonnie",
+            "value": "Stevonie"
+        },
+        {
+            "key":"Smoky",
+            "value": "Smoky "
+        },
+        {
+            "key":"Rainbow",
+            "value": "Arcoíris"
+        },
+        {
+            "key":"Sunstone",
+            "value": "Sunstone"
+        },
+        {
+            "key":"Obsidian",
+            "value": "Obsidiana"
+        },
+        {
+            "key":"White",
+            "value": "Blanco"
+        },
+        {
+            "key":"Yellow",
+            "value": "Amarillo"
+        },
+        {
+            "key":"Blue",
+            "value": "Azul"
+        },
+        {
+            "key":"Spinel",
+            "value": "Espinela"
         }
     ]
 }

@@ -9,6 +9,7 @@ public class BeachManager : MonoBehaviour
     public Button english;
     public Button spanish;
     public Button portuguese;
+    public Button russian;
     public AudioSource audioSource;
 
     private Dictionary<string, Button> flags;
@@ -20,6 +21,7 @@ public class BeachManager : MonoBehaviour
         flags.Add("english", english);
         flags.Add("spanish", spanish);
         flags.Add("portuguese", portuguese);
+        flags.Add("russian", russian);
     }
 
     private void Start()
@@ -28,6 +30,7 @@ public class BeachManager : MonoBehaviour
         english.GetComponent<Button>().onClick.AddListener(delegate { StartCoroutine(SetLangTo("english")); });
         spanish.GetComponent<Button>().onClick.AddListener(delegate { StartCoroutine(SetLangTo("spanish")); });
         portuguese.GetComponent<Button>().onClick.AddListener(delegate { StartCoroutine(SetLangTo("portuguese")); });
+        russian.GetComponent<Button>().onClick.AddListener(delegate { StartCoroutine(SetLangTo("russian")); });
 
         flags[PlayerPrefs.GetString("lang")].interactable = false;
     }

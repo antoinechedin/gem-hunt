@@ -1,9 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class LocalizationManager : MonoBehaviour
 {
     public static LocalizationManager instance;
+
+    public TMP_FontAsset latinFA;
+    public TMP_FontAsset latinOutlineFA;
+    public TMP_FontAsset latinShadowFA;
+    public TMP_FontAsset cyrillicFA;
+    public TMP_FontAsset cyrillicOutlineFA;
+    public TMP_FontAsset cyrillicShadowFA;
+
+    public Alphabet Alphabet { get; private set; }
 
     public delegate void UpdateText();
     public static event UpdateText OnUpdateText;
@@ -53,6 +63,15 @@ public class LocalizationManager : MonoBehaviour
         }
 
         Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
+        
+        if(lang.Equals("russian"))
+        {
+            Alphabet = Alphabet.Cyrillic;
+        }
+        else{
+            Alphabet = Alphabet.Latin;
+        }
+
         isReady = true;
     }
 

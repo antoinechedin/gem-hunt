@@ -6,12 +6,12 @@ public class LocalizationManager : MonoBehaviour
 {
     public static LocalizationManager instance;
 
-    public TMP_FontAsset latinFA;
-    public TMP_FontAsset latinOutlineFA;
-    public TMP_FontAsset latinShadowFA;
-    public TMP_FontAsset cyrillicFA;
-    public TMP_FontAsset cyrillicOutlineFA;
-    public TMP_FontAsset cyrillicShadowFA;
+    public TMP_FontAsset latin;
+    public TMP_FontAsset latinOutline;
+    public TMP_FontAsset latinShadow;
+    public TMP_FontAsset cyrillic;
+    public TMP_FontAsset cyrillicOutline;
+    public TMP_FontAsset cyrillicShadow;
 
     public Alphabet Alphabet { get; private set; }
 

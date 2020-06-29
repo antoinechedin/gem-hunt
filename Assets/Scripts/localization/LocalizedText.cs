@@ -58,23 +58,23 @@ public class LocalizedText : MonoBehaviour
             alphabet = LocalizationManager.instance.Alphabet;
             if (alphabet == Alphabet.Latin)
             {
-                if (texts.Length > 0 && texts[0] != null) texts[0].font = LocalizationManager.instance.latinFA;
-                if (texts.Length > 1 && texts[1] != null) texts[1].font = LocalizationManager.instance.latinOutlineFA;
-                if (texts.Length > 2 && texts[2] != null) texts[2].font = LocalizationManager.instance.latinShadowFA;
+                if (texts.Length > 0 && texts[0] != null) texts[0].font = LocalizationManager.instance.latin;
+                if (texts.Length > 1 && texts[1] != null) texts[1].font = LocalizationManager.instance.latinOutline;
+                if (texts.Length > 2 && texts[2] != null) texts[2].font = LocalizationManager.instance.latinShadow;
 
-                if (uiTexts.Length > 0 && uiTexts[0] != null) uiTexts[0].font = LocalizationManager.instance.latinFA;
-                if (uiTexts.Length > 1 && uiTexts[1] != null) uiTexts[1].font = LocalizationManager.instance.latinOutlineFA;
-                if (uiTexts.Length > 2 && uiTexts[2] != null) uiTexts[2].font = LocalizationManager.instance.latinShadowFA;
+                if (uiTexts.Length > 0 && uiTexts[0] != null) uiTexts[0].font = LocalizationManager.instance.latin;
+                if (uiTexts.Length > 1 && uiTexts[1] != null) uiTexts[1].font = LocalizationManager.instance.latinOutline;
+                if (uiTexts.Length > 2 && uiTexts[2] != null) uiTexts[2].font = LocalizationManager.instance.latinShadow;
             }
             else if (alphabet == Alphabet.Cyrillic)
             {
-                if (texts.Length > 0 && texts[0] != null) texts[0].font = LocalizationManager.instance.cyrillicFA;
-                if (texts.Length > 1 && texts[1] != null) texts[1].font = LocalizationManager.instance.cyrillicOutlineFA;
-                if (texts.Length > 2 && texts[2] != null) texts[2].font = LocalizationManager.instance.cyrillicShadowFA;
+                if (texts.Length > 0 && texts[0] != null) texts[0].font = LocalizationManager.instance.cyrillic;
+                if (texts.Length > 1 && texts[1] != null) texts[1].font = LocalizationManager.instance.cyrillicOutline;
+                if (texts.Length > 2 && texts[2] != null) texts[2].font = LocalizationManager.instance.cyrillicShadow;
 
-                if (uiTexts.Length > 0 && uiTexts[0] != null) uiTexts[0].font = LocalizationManager.instance.cyrillicFA;
-                if (uiTexts.Length > 1 && uiTexts[1] != null) uiTexts[1].font = LocalizationManager.instance.cyrillicOutlineFA;
-                if (uiTexts.Length > 2 && uiTexts[2] != null) uiTexts[2].font = LocalizationManager.instance.cyrillicShadowFA;
+                if (uiTexts.Length > 0 && uiTexts[0] != null) uiTexts[0].font = LocalizationManager.instance.cyrillic;
+                if (uiTexts.Length > 1 && uiTexts[1] != null) uiTexts[1].font = LocalizationManager.instance.cyrillicOutline;
+                if (uiTexts.Length > 2 && uiTexts[2] != null) uiTexts[2].font = LocalizationManager.instance.cyrillicShadow;
             }
         }
     }

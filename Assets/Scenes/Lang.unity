@@ -631,12 +631,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d76481d332e9a488371d5c339cf5ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  latinFA: {fileID: 11400000, guid: 26664902f27aad344b6446b95c5a939e, type: 2}
-  latinOutlineFA: {fileID: 11400000, guid: 7b68b4733295654448142357e4bfc30b, type: 2}
-  latinShadowFA: {fileID: 11400000, guid: 7aad720dcca385c498b76efdec66220d, type: 2}
-  cyrillicFA: {fileID: 11400000, guid: 885f4bd5b7dde9244ad7a9a515733f27, type: 2}
-  cyrillicOutlineFA: {fileID: 11400000, guid: 4700b9b8328667c42968f29239b63360, type: 2}
-  cyrillicShadowFA: {fileID: 11400000, guid: b3b18e24bf0d63043be53e7677b7fdb7, type: 2}
+  latin: {fileID: 11400000, guid: 26664902f27aad344b6446b95c5a939e, type: 2}
+  latinOutline: {fileID: 11400000, guid: 7b68b4733295654448142357e4bfc30b, type: 2}
+  latinShadow: {fileID: 11400000, guid: 7aad720dcca385c498b76efdec66220d, type: 2}
+  cyrillic: {fileID: 11400000, guid: 885f4bd5b7dde9244ad7a9a515733f27, type: 2}
+  cyrillicOutline: {fileID: 11400000, guid: 4700b9b8328667c42968f29239b63360, type: 2}
+  cyrillicShadow: {fileID: 11400000, guid: b3b18e24bf0d63043be53e7677b7fdb7, type: 2}
 --- !u!4 &1222031380
 Transform:
   m_ObjectHideFlags: 0

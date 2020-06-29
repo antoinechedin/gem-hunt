@@ -25,7 +25,7 @@ public class LangManager : MonoBehaviour
             if (portuguese != null)
                 portuguese.onClick.AddListener(delegate { SetLang("portuguese"); });
             if (russian != null)
-                portuguese.onClick.AddListener(delegate { SetLang("russian"); });
+                russian.onClick.AddListener(delegate { SetLang("russian"); });
         }
     }
 

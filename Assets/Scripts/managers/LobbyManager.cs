@@ -125,7 +125,7 @@ public class LobbyManager : MonoBehaviour
 
     public void UpdateCounterText()
     {
-        string s = "{0}/5 max";
+        string s = "{0}/5";
         int totalPlayer = playerCount + computerCount;
         counterText.SetText(string.Format(s, playerCount + computerCount));
         if (totalPlayer >= 2 && totalPlayer <= 5)

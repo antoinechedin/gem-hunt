@@ -22,7 +22,7 @@
         },
         {
             "key":"counterText",
-            "value": "{0}/5 mакс"
+            "value": "mакс"
         },
         {
             "key":"stop",

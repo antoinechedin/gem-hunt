@@ -115,7 +115,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 max""
+            ""value"": ""max""
         },
         {
             ""key"":""stop"",
@@ -351,7 +351,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 max""
+            ""value"": ""max""
         },
         {
             ""key"":""stop"",
@@ -587,7 +587,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 máx""
+            ""value"": ""máx""
         },
         {
             ""key"":""stop"",
@@ -823,7 +823,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 máx""
+            ""value"": ""máx""
         },
         {
             ""key"":""stop"",
@@ -1059,7 +1059,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 mакс""
+            ""value"": ""mакс""
         },
         {
             ""key"":""stop"",

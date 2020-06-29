@@ -303,7 +303,7 @@ MonoBehaviour:
   text: {fileID: 5146360486107339070}
   image: {fileID: 2345237746750756941}
   hlg: {fileID: 1142845950000453034}
-  offset: 5
+  offset: 13
 --- !u!114 &3361817921933580442
 MonoBehaviour:
   m_ObjectHideFlags: 0

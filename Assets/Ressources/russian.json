@@ -126,7 +126,11 @@
         },
         {
             "key":"Steven",
-            "value": "Стивена"
+            "value": "Стивен"
+        },
+        {
+            "key":"Steven_alt",
+            "value": "Стивенa"
         },
         {
             "key":"Garnet",
@@ -158,6 +162,10 @@
         },
         {
             "key":"Greg",
+            "value": "Грег"
+        },
+        {
+            "key":"Greg_alt",
             "value": "Грега"
         },
         {
@@ -166,6 +174,10 @@
         },
         {
             "key":"Lion",
+            "value": "Лев"
+        },
+        {
+            "key":"Lion_alt",
             "value": "Льва"
         },
         {
@@ -174,6 +186,10 @@
         },
         {
             "key":"Opal",
+            "value": "Опал"
+        },
+        {
+            "key":"Opal_alt",
             "value": "Опала"
         },
         {
@@ -190,6 +206,10 @@
         },
         {
             "key":"Holo Pearl",
+            "value": "Голограмма Жемчуг"
+        },
+        {
+            "key":"Holo Pearl_alt",
             "value": "Голограммы Жемчуг"
         },
         {
@@ -202,31 +222,59 @@
         },
         {
             "key":"Smoky",
-            "value": "Дымчатого "
+            "value": "Дымчатый Кварц"
+        },
+        {
+            "key":"Smoky_alt",
+            "value": "Дымчатого Кварца"
         },
         {
             "key":"Rainbow",
-            "value": "Радужного"
+            "value": "Радужный Кварц"
+        },
+        {
+            "key":"Rainbow_alt",
+            "value": "Радужного Солнца"
         },
         {
             "key":"Sunstone",
+            "value": "Камень Солнца"
+        },
+        {
+            "key":"Sunstone_alt",
             "value": "Камня Солнца"
         },
         {
             "key":"Obsidian",
+            "value": "Обсидиан"
+        },
+        {
+            "key":"Obsidian_alt",
             "value": "Обсидиана"
         },
         {
             "key":"White",
-            "value": "Белого"
+            "value": "Белый Алмаз"
+        },
+        {
+            "key":"White_alt",
+            "value": "Белого Алмаза"
         },
         {
             "key":"Yellow",
-            "value": "Желтого"
+            "value": "Желтый Алмаз"
+        },
+        {
+            "key":"Yellow_alt",
+            "value": "Желтого Алмаза"
         },
         {
             "key":"Blue",
-            "value": "Синего"
+            "value": "Синий Алмаз"
+        },
+        {
+            "key":"Blue_alt",
+            "value": "Синего Алмаза"
         },
         {
             "key":"Spinel",

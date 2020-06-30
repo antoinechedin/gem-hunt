@@ -75,15 +75,17 @@ public class LocalizationManager : MonoBehaviour
         isReady = true;
     }
 
-    public string GetLocalizedValue(string key)
+    public string GetLocalizedValue(string key, bool alt = false)
     {
-        string result = missingTextString;
-        if (localizedText.ContainsKey(key))
+        if (alt && localizedText.ContainsKey(key + "_alt"))
         {
-            result = localizedText[key];
+            return localizedText[key + "_alt"];
         }
-
-        return result;
+        else if (localizedText.ContainsKey(key))
+        {
+            return localizedText[key];
+        }
+        return missingTextString;
     }
 
     public bool GetIsReady()
@@ -1163,7 +1165,11 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Steven"",
-            ""value"": ""Стивена""
+            ""value"": ""Стивен""
+        },
+        {
+            ""key"":""Steven_alt"",
+            ""value"": ""Стивенa""
         },
         {
             ""key"":""Garnet"",
@@ -1195,6 +1201,10 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Greg"",
+            ""value"": ""Грег""
+        },
+        {
+            ""key"":""Greg_alt"",
             ""value"": ""Грега""
         },
         {
@@ -1203,6 +1213,10 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Lion"",
+            ""value"": ""Лев""
+        },
+        {
+            ""key"":""Lion_alt"",
             ""value"": ""Льва""
         },
         {
@@ -1211,6 +1225,10 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Opal"",
+            ""value"": ""Опал""
+        },
+        {
+            ""key"":""Opal_alt"",
             ""value"": ""Опала""
         },
         {
@@ -1227,6 +1245,10 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Holo Pearl"",
+            ""value"": ""Голограмма Жемчуг""
+        },
+        {
+            ""key"":""Holo Pearl_alt"",
             ""value"": ""Голограммы Жемчуг""
         },
         {
@@ -1239,31 +1261,59 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Smoky"",
-            ""value"": ""Дымчатого ""
+            ""value"": ""Дымчатый Кварц""
+        },
+        {
+            ""key"":""Smoky_alt"",
+            ""value"": ""Дымчатого Кварца""
         },
         {
             ""key"":""Rainbow"",
-            ""value"": ""Радужного""
+            ""value"": ""Радужный Кварц""
+        },
+        {
+            ""key"":""Rainbow_alt"",
+            ""value"": ""Радужного Солнца""
         },
         {
             ""key"":""Sunstone"",
+            ""value"": ""Камень Солнца""
+        },
+        {
+            ""key"":""Sunstone_alt"",
             ""value"": ""Камня Солнца""
         },
         {
             ""key"":""Obsidian"",
+            ""value"": ""Обсидиан""
+        },
+        {
+            ""key"":""Obsidian_alt"",
             ""value"": ""Обсидиана""
         },
         {
             ""key"":""White"",
-            ""value"": ""Белого""
+            ""value"": ""Белый Алмаз""
+        },
+        {
+            ""key"":""White_alt"",
+            ""value"": ""Белого Алмаза""
         },
         {
             ""key"":""Yellow"",
-            ""value"": ""Желтого""
+            ""value"": ""Желтый Алмаз""
+        },
+        {
+            ""key"":""Yellow_alt"",
+            ""value"": ""Желтого Алмаза""
         },
         {
             ""key"":""Blue"",
-            ""value"": ""Синего""
+            ""value"": ""Синий Алмаз""
+        },
+        {
+            ""key"":""Blue_alt"",
+            ""value"": ""Синего Алмаза""
         },
         {
             ""key"":""Spinel"",

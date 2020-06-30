@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -6,6 +6,7 @@ using TMPro;
 public class LocalizedText : MonoBehaviour
 {
     public string key;
+    public bool alt = false; // Use for russian, since some names should be tuned
     public TextMeshPro[] texts;
     public TextMeshProUGUI[] uiTexts;
 
@@ -37,18 +38,18 @@ public class LocalizedText : MonoBehaviour
         UpdateAlphbet();
 
         foreach (TextMeshPro t in texts)
-        { if (t != null) t.text = LocalizationManager.instance.GetLocalizedValue(key); }
+        { if (t != null) t.text = LocalizationManager.instance.GetLocalizedValue(key, alt); }
         foreach (TextMeshProUGUI t in uiTexts)
-        { if (t != null) t.text = LocalizationManager.instance.GetLocalizedValue(key); }
+        { if (t != null) t.text = LocalizationManager.instance.GetLocalizedValue(key, alt); }
     }
     public void SetLocalizedFormatedText(string[] args)
     {
         UpdateAlphbet();
 
         foreach (TextMeshPro t in texts)
-        { if (t != null) t.text = string.Format(LocalizationManager.instance.GetLocalizedValue(key), args); }
+        { if (t != null) t.text = string.Format(LocalizationManager.instance.GetLocalizedValue(key, alt), args); }
         foreach (TextMeshProUGUI t in uiTexts)
-        { if (t != null) t.text = string.Format(LocalizationManager.instance.GetLocalizedValue(key), args); }
+        { if (t != null) t.text = string.Format(LocalizationManager.instance.GetLocalizedValue(key, alt), args); }
     }
 
     private void UpdateAlphbet()

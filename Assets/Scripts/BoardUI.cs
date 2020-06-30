@@ -173,7 +173,9 @@ public class BoardUI : MonoBehaviour
 
     public IEnumerator ShowTurnTitle(string characterName, Color characterColor, bool showButton)
     {
-        turnText.SetLocalizedFormatedText(new string[1] {LocalizationManager.instance.GetLocalizedValue(characterName)});
+        bool alt = LocalizationManager.instance.Alphabet == Alphabet.Cyrillic;
+
+        turnText.SetLocalizedFormatedText(new string[1] {LocalizationManager.instance.GetLocalizedValue(characterName, alt)});
         turnText.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().color = characterColor;
         startButton.SetTextColor(characterColor);
 

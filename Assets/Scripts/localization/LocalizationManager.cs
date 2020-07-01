@@ -297,7 +297,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Smoky"",
-            ""value"": ""Quartz Fumé ""
+            ""value"": ""Quartz Fumé""
         },
         {
             ""key"":""Rainbow"",
@@ -533,7 +533,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Smoky"",
-            ""value"": ""Smoky ""
+            ""value"": ""Smoky""
         },
         {
             ""key"":""Rainbow"",
@@ -1005,7 +1005,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""Smoky"",
-            ""value"": ""Smoky ""
+            ""value"": ""Smoky""
         },
         {
             ""key"":""Rainbow"",

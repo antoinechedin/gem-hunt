@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using Utils;
-
 public class Dice : MonoBehaviour
 {
     public Sprite[] greenSprites;

@@ -14,5 +14,6 @@ public class LocalizationItem
 public enum Alphabet
 {
     Latin,
-    Cyrillic
+    Cyrillic,
+    Arabic
 }

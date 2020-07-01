@@ -12,6 +12,9 @@ public class LocalizationManager : MonoBehaviour
     public TMP_FontAsset cyrillic;
     public TMP_FontAsset cyrillicOutline;
     public TMP_FontAsset cyrillicShadow;
+    public TMP_FontAsset arabicFont;
+    public TMP_FontAsset arabicOutline;
+    public TMP_FontAsset arabicShadow;
 
     public Alphabet Alphabet { get; private set; }
 
@@ -41,6 +44,7 @@ public class LocalizationManager : MonoBehaviour
         languages.Add("spanish", spanish);
         languages.Add("portuguese", portuguese);
         languages.Add("russian", russian);
+        languages.Add("arabic", arabic);
     }
 
     public void UpdateAllText()
@@ -63,12 +67,17 @@ public class LocalizationManager : MonoBehaviour
         }
 
         Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
-        
-        if(lang.Equals("russian"))
+
+        if (lang.Equals("russian"))
         {
             Alphabet = Alphabet.Cyrillic;
         }
-        else{
+        else if (lang.Equals("arabic"))
+        {
+            Alphabet = Alphabet.Arabic;
+        }
+        else
+        {
             Alphabet = Alphabet.Latin;
         }
 
@@ -1345,7 +1354,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""الحد الأقصى""
+            ""value"": """"
         },
         {
             ""key"":""stop"",

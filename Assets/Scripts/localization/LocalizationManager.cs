@@ -1,12 +1,22 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
-using UnityEngine.Networking;
+using TMPro;
 
 public class LocalizationManager : MonoBehaviour
 {
     public static LocalizationManager instance;
+
+    public TMP_FontAsset latin;
+    public TMP_FontAsset latinOutline;
+    public TMP_FontAsset latinShadow;
+    public TMP_FontAsset cyrillic;
+    public TMP_FontAsset cyrillicOutline;
+    public TMP_FontAsset cyrillicShadow;
+    public TMP_FontAsset arabicFont;
+    public TMP_FontAsset arabicOutline;
+    public TMP_FontAsset arabicShadow;
+
+    public Alphabet Alphabet { get; private set; }
 
     public delegate void UpdateText();
     public static event UpdateText OnUpdateText;
@@ -16,7 +26,6 @@ public class LocalizationManager : MonoBehaviour
     private bool isReady = false;
     private string missingTextString = "Localized text not found";
 
-    // Use this for initialization
     void Awake()
     {
         if (instance == null)
@@ -34,6 +43,8 @@ public class LocalizationManager : MonoBehaviour
         languages.Add("english", english);
         languages.Add("spanish", spanish);
         languages.Add("portuguese", portuguese);
+        languages.Add("russian", russian);
+        languages.Add("arabic", arabic);
     }
 
     public void UpdateAllText()
@@ -56,19 +67,34 @@ public class LocalizationManager : MonoBehaviour
         }
 
         Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
+
+        if (lang.Equals("russian"))
+        {
+            Alphabet = Alphabet.Cyrillic;
+        }
+        else if (lang.Equals("arabic"))
+        {
+            Alphabet = Alphabet.Arabic;
+        }
+        else
+        {
+            Alphabet = Alphabet.Latin;
+        }
+
         isReady = true;
     }
 
-    public string GetLocalizedValue(string key)
+    public string GetLocalizedValue(string key, bool alt = false)
     {
-        string result = missingTextString;
-        if (localizedText.ContainsKey(key))
+        if (alt && localizedText.ContainsKey(key + "_alt"))
         {
-            result = localizedText[key];
+            return localizedText[key + "_alt"];
         }
-
-        return result;
-
+        else if (localizedText.ContainsKey(key))
+        {
+            return localizedText[key];
+        }
+        return missingTextString;
     }
 
     public bool GetIsReady()
@@ -100,7 +126,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 max""
+            ""value"": ""max""
         },
         {
             ""key"":""stop"",
@@ -255,7 +281,7 @@ public class LocalizationManager : MonoBehaviour
             ""value"": ""Opale""
         },
         {
-            ""key"":""Sugulite"",
+            ""key"":""Sugilite"",
             ""value"": ""Lavulite""
         },
         {
@@ -269,6 +295,46 @@ public class LocalizationManager : MonoBehaviour
         {
             ""key"":""Holo Pearl"",
             ""value"": ""Holo Perle""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Bismuth""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Stevonie""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Quartz Fumé""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Arc-en-ciel""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Pierre de Soleil""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Obsidienne""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""Blanc""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Jaune""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Bleu""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Spinelle""
         }
     ]}";
 
@@ -296,7 +362,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 max""
+            ""value"": ""max""
         },
         {
             ""key"":""stop"",
@@ -312,7 +378,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""winText"",
-            ""value"": ""{0} wins!""
+            ""value"": ""{0} won!""
         },
         {
             ""key"":""results"",
@@ -451,8 +517,8 @@ public class LocalizationManager : MonoBehaviour
             ""value"": ""Opal""
         },
         {
-            ""key"":""Sugulite"",
-            ""value"": ""Sugulite""
+            ""key"":""Sugilite"",
+            ""value"": ""Sugilite""
         },
         {
             ""key"":""Sardonyx"",
@@ -465,6 +531,46 @@ public class LocalizationManager : MonoBehaviour
         {
             ""key"":""Holo Pearl"",
             ""value"": ""Holo Pearl""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Bismuth""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Stevonie""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Smoky""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Rainbow""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Sunstone""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Obsidian""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""White""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Yellow""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Blue""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Spinel""
         }
     ]}";
 
@@ -492,7 +598,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 máx""
+            ""value"": ""máx""
         },
         {
             ""key"":""stop"",
@@ -647,8 +753,8 @@ public class LocalizationManager : MonoBehaviour
             ""value"": ""Opal""
         },
         {
-            ""key"":""Sugulite"",
-            ""value"": ""Sugalite""
+            ""key"":""Sugilite"",
+            ""value"": ""Sugilite""
         },
         {
             ""key"":""Sardonyx"",
@@ -661,6 +767,46 @@ public class LocalizationManager : MonoBehaviour
         {
             ""key"":""Holo Pearl"",
             ""value"": ""Holo-Pérola""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Bismuto""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Stevonnie""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Quartzo Fumê""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Arco-Íris""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Pedra do Sol""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Obsidiana""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""Branco""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Amarelo""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Azul""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Spinela""
         }
     ]}";
 
@@ -688,7 +834,7 @@ public class LocalizationManager : MonoBehaviour
         },
         {
             ""key"":""counterText"",
-            ""value"": ""{0}/5 máx""
+            ""value"": ""máx""
         },
         {
             ""key"":""stop"",
@@ -843,7 +989,7 @@ public class LocalizationManager : MonoBehaviour
             ""value"": ""Ópalo""
         },
         {
-            ""key"":""Sugulite"",
+            ""key"":""Sugilite"",
             ""value"": ""Sugalite""
         },
         {
@@ -857,6 +1003,674 @@ public class LocalizationManager : MonoBehaviour
         {
             ""key"":""Holo Pearl"",
             ""value"": ""Holoperla""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Bismuto""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Stevonie""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Smoky""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Arcoíris""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Sunstone""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Obsidiana""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""Blanco""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Amarillo""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Azul""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Espinela""
+        }
+    ]}";
+
+    private string russian = @"{
+    ""items"": [
+         {
+            ""key"":""languages"",
+            ""value"": ""Язык""
+        },
+        {
+            ""key"":""newGame"",
+            ""value"": ""Новая игра""
+        },
+        {
+            ""key"": ""start"",
+            ""value"": ""Начать""
+        },
+        {
+            ""key"":""player"",
+            ""value"":""Игрок""
+        },
+        {
+            ""key"": ""computer"",
+            ""value"": ""Компьютер""
+        },
+        {
+            ""key"":""counterText"",
+            ""value"": ""mакс""
+        },
+        {
+            ""key"":""stop"",
+            ""value"": ""Стоп""
+        },
+        {
+            ""key"":""continue"",
+            ""value"": ""Продолжить""
+        },
+        {
+            ""key"":""turnText"",
+            ""value"": ""Ход {0}""
+        },
+        {
+            ""key"":""winText"",
+            ""value"": ""{0} выйграл!""
+        },
+        {
+            ""key"":""results"",
+            ""value"": ""Результаты""
+        },
+        {
+            ""key"":""restart"",
+            ""value"": ""Повтор""
+        },
+        {
+            ""key"":""home"",
+            ""value"": ""На главную""
+        },
+        {
+            ""key"":""pause"",
+            ""value"": ""Пауза""
+        },
+        {
+            ""key"":""resume"",
+            ""value"": ""Продолжить""
+        },
+        {
+            ""key"":""rules"",
+            ""value"": ""Правила""
+        },
+        {
+            ""key"":""dicePool"",
+            ""value"": ""Игра в кости""
+        },
+        {
+            ""key"":""goodGame"",
+            ""value"": ""Удачи!""
+        },
+        {
+            ""key"":""rules_0_0"",
+            ""value"": ""Gem Hunt - это игра в кости, в которой вы Испорченые самоцветы, чтобы поймать их.""
+        },
+        {
+            ""key"":""rules_0_1"",
+            ""value"": ""В свою очередь кидаются 3 кубика. Каждый из них представляет собой испорченный драгоценный камень.""
+        },
+        {
+            ""key"":""rules_0_2"",
+            ""value"": ""Зеленые кубики-самые легкие, оранжевые-средние, а красные-сложный.""
+        },
+        {
+            ""key"":""rules_1_0"",
+            ""value"": ""У кубиков 3 символа:""
+        },
+        {
+            ""key"":""rules_1_1"",
+            ""value"": ""Пузырь: вы захватили самоцвет, набрав 1 очко. На зеленом кубике их 3, на оранжевом-2 и только на Красном-1.""
+        },
+        {
+            ""key"":""rules_1_2"",
+            ""value"": ""Когти: Атака испорченого самоцвета! Вы теряете 1 очко жизни. Челюсти есть на 3 красных кубиках, 2 на оранжевых и 1 на зеленых.""
+        },
+        {
+            ""key"":""rules_1_3"",
+            ""value"": ""Следы: Испорченый самоцвет сбежал. Если вы решите продолжить свою охоту, вы снова бросите эту кость вместо того, чтобы выбрать новую. Всего их 2, независимо от цвета кости.""
+        },
+        {
+            ""key"":""rules_2_0"",
+            ""value"": ""Если вы потеряете все сердечки, ваш ход закончится и вы потеряете все очки, которые получили в этом ходе. В любом случае вы можете остановить, или продолжить охоту.""
+        },
+        {
+            ""key"":""rules_2_1"",
+            ""value"": ""Если вы решите остановиться, вы сохраняете свои очки, восстанавливаете свое здоровье и ждете своего следующего хода.""
+        },
+        {
+            ""key"":""rules_2_2"",
+            ""value"": ""Если вы решите продолжить, кости заменяются новыми случайными костями. Так что вы всегда бросаете 3 кости.""
+        },
+        {
+            ""key"":""rules_3_0"",
+            ""value"": ""Имейте в виду, что повторное бросание красных кубиков более опасно, чем зеленых. Если у вас осталось только 1 сердечко,то возможно вам следует прекратить свою охоту.""
+        },
+        {
+            ""key"":""rules_3_1"",
+            ""value"": ""То же самое, если после броска остались только красные или оранжевые кости. Будь осторожен.""
+        },
+        {
+            ""key"":""rules_3_2"",
+            ""value"": ""Если игрок собирает 13 очков и больше,чем другие игроки,то он побеждает""
+        },
+        {
+            ""key"":""Steven"",
+            ""value"": ""Стивен""
+        },
+        {
+            ""key"":""Steven_alt"",
+            ""value"": ""Стивенa""
+        },
+        {
+            ""key"":""Garnet"",
+            ""value"": ""Гранат""
+        },
+        {
+            ""key"":""Amethyst"",
+            ""value"": ""Аметист""
+        },
+        {
+            ""key"":""Pearl"",
+            ""value"": ""Жемчуг""
+        },
+        {
+            ""key"":""Ruby"",
+            ""value"": ""Рубин""
+        },
+        {
+            ""key"":""Sapphire"",
+            ""value"": ""Сапфир""
+        },
+        {
+            ""key"":""Peridot"",
+            ""value"": ""Перидот""
+        },
+        {
+            ""key"":""Lapis"",
+            ""value"": ""Ляпис""
+        },
+        {
+            ""key"":""Greg"",
+            ""value"": ""Грег""
+        },
+        {
+            ""key"":""Greg_alt"",
+            ""value"": ""Грега""
+        },
+        {
+            ""key"":""Connie"",
+            ""value"": ""Конни""
+        },
+        {
+            ""key"":""Lion"",
+            ""value"": ""Лев""
+        },
+        {
+            ""key"":""Lion_alt"",
+            ""value"": ""Льва""
+        },
+        {
+            ""key"":""Jasper"",
+            ""value"": ""Джаспер""
+        },
+        {
+            ""key"":""Opal"",
+            ""value"": ""Опал""
+        },
+        {
+            ""key"":""Opal_alt"",
+            ""value"": ""Опала""
+        },
+        {
+            ""key"":""Sugilite"",
+            ""value"": ""Сагилит""
+        },
+        {
+            ""key"":""Sardonyx"",
+            ""value"": ""Сардоникс""
+        },
+        {
+            ""key"":""Alexandrite"",
+            ""value"": ""Александрит""
+        },
+        {
+            ""key"":""Holo Pearl"",
+            ""value"": ""Голограмма Жемчуг""
+        },
+        {
+            ""key"":""Holo Pearl_alt"",
+            ""value"": ""Голограммы Жемчуг""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""Висмут""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""Стивонни""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""Дымчатый Кварц""
+        },
+        {
+            ""key"":""Smoky_alt"",
+            ""value"": ""Дымчатого Кварца""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""Радужный Кварц""
+        },
+        {
+            ""key"":""Rainbow_alt"",
+            ""value"": ""Радужного Солнца""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""Камень Солнца""
+        },
+        {
+            ""key"":""Sunstone_alt"",
+            ""value"": ""Камня Солнца""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""Обсидиан""
+        },
+        {
+            ""key"":""Obsidian_alt"",
+            ""value"": ""Обсидиана""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""Белый Алмаз""
+        },
+        {
+            ""key"":""White_alt"",
+            ""value"": ""Белого Алмаза""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""Желтый Алмаз""
+        },
+        {
+            ""key"":""Yellow_alt"",
+            ""value"": ""Желтого Алмаза""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""Синий Алмаз""
+        },
+        {
+            ""key"":""Blue_alt"",
+            ""value"": ""Синего Алмаза""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""Спинел""
+        }
+    ]}";
+
+    private string arabic = @"{
+    ""items"": [
+         {
+            ""key"":""languages"",
+            ""value"": ""اللغات""
+        },
+        {
+            ""key"":""newGame"",
+            ""value"": ""لعبة جديدة""
+        },
+        {
+            ""key"": ""start"",
+            ""value"": ""ابدأ""
+        },
+        {
+            ""key"":""player"",
+            ""value"":""لاعب""
+        },
+        {
+            ""key"": ""computer"",
+            ""value"": ""كمبيوتر""
+        },
+        {
+            ""key"":""counterText"",
+            ""value"": """"
+        },
+        {
+            ""key"":""stop"",
+            ""value"": ""توقف""
+        },
+        {
+            ""key"":""continue"",
+            ""value"": ""أكمل""
+        },
+        {
+            ""key"":""turnText"",
+            ""value"": ""use character""
+        },
+        {
+            ""key"":""winText"",
+            ""value"": ""use alt character""
+        },
+        {
+            ""key"":""results"",
+            ""value"": ""النتائج""
+        },
+        {
+            ""key"":""restart"",
+            ""value"": ""إعادة البدء""
+        },
+        {
+            ""key"":""home"",
+            ""value"": ""الصفحة الرئيسية""
+        },
+        {
+            ""key"":""pause"",
+            ""value"": ""توقف""
+        },
+        {
+            ""key"":""resume"",
+            ""value"": ""أكمل""
+        },
+        {
+            ""key"":""rules"",
+            ""value"": ""القوانين""
+        },
+        {
+            ""key"":""dicePool"",
+            ""value"": ""حوض النرود""
+        },
+        {
+            ""key"":""goodGame"",
+            ""value"": ""حظاً موفقاً""
+        },
+        {
+            ""key"":""rules_0_0"",
+            ""value"": ""جيم هنت هي لعبة نرد حيث تتعقب الجميز الفاسدة لتقبض عليهم""
+        },
+        {
+            ""key"":""rules_0_1"",
+            ""value"": ""في دورتك, يتم أخذ 3 نرود من الحوض و يتم العب بها. كل منها تعبر عن جيم فاسد""
+        },
+        {
+            ""key"":""rules_0_2"",
+            ""value"": ""النرود الخضراء هي الأسهل, لكن البرتقالية متوسطة و الحمراء هي الأصعب""
+        },
+        {
+            ""key"":""rules_1_0"",
+            ""value"": ""النرود لديها 3 علامات""
+        },
+        {
+            ""key"":""rules_1_1"",
+            ""value"": ""الفقاع : لقد قبضت عل الجيم, فتحرز نقطة واحدة . هنالك ثلاث منهم في الأخضر,إثنان في البرتقالي و واحدة فقط في الأحمر""
+        },
+        {
+            ""key"":""rules_1_2"",
+            ""value"": ""المخالب:الجيم رد الهجوم! تخسر نقطة 1 من الصحة. هنالك ثلاث منهم في الأحمر, إثنان في البرتقالي و فقط واحد في الأخضر""
+        },
+        {
+            ""key"":""rules_1_3"",
+            ""value"": ""آثار الأقدام: هرب الجيم . إذا اخترت أن تكمل تعقبك , سوف تعيد استخدام نرودك بدل من استخدام نرود جديدة. هنالك إثنان منهم, في كل الألوان""
+        },
+        {
+            ""key"":""rules_2_0"",
+            ""value"": ""إذا خسرت جميع نقاط صحتك , دورتك قد إنتهت و تخسر جميع النقاط التي جمعتها في هاذا الدور . في أي حال اخر, تستطيع أن تختار أن تتوقف أو تكمل التعقب""
+        },
+        {
+            ""key"":""rules_2_1"",
+            ""value"": ""إذا أخترت أن تتوقف , تحتفظ بنقاطك, تسترجع جميع نقاط صحتك و دور اللعاب الأتي يبدء""
+        },
+        {
+            ""key"":""rules_2_2"",
+            ""value"": ""إذا أخترت أن تكمل, نرود المخالب و الفقاقيع تتنحا جانبن و نرود عشوائية جديدة تؤخذ من الحوظ فلذلك سيكون لديك ثلاث نرود في كل الأوقات""
+        },
+        {
+            ""key"":""rules_3_0"",
+            ""value"": ""تذكر ان إعادة لعب النرود الحمراء أخطر من الخضراء . إن كان لديك نقطة صحة واحدة, ربما يجب عليك إيقاف التعقب""
+        },
+        {
+            ""key"":""rules_3_1"",
+            ""value"": ""ينطبق نفس الشيء إن كان هونالك فقط نرود حمراء او برتقالية في الحوظ . فلذلك ابقي عينن عليها""
+        },
+        {
+            ""key"":""rules_3_2"",
+            ""value"": ""أول لاعب يحصل على ثلاثت عشر نقطة أو أكثر سيفوز""
+        },
+        {
+            ""key"":""Steven"",
+            ""value"": ""دور ستيفن""
+        },
+        {
+            ""key"":""Garnet"",
+            ""value"": ""دور قارات""
+        },
+        {
+            ""key"":""Amethyst"",
+            ""value"": ""دور امثيست""
+        },
+        {
+            ""key"":""Pearl"",
+            ""value"": ""دور بيرل""
+        },
+        {
+            ""key"":""Ruby"",
+            ""value"": ""دور روبي""
+        },
+        {
+            ""key"":""Sapphire"",
+            ""value"": ""دور سافير""
+        },
+        {
+            ""key"":""Peridot"",
+            ""value"": ""دور بيريدوت""
+        },
+        {
+            ""key"":""Lapis"",
+            ""value"": ""دور لابيس""
+        },
+        {
+            ""key"":""Greg"",
+            ""value"": ""دور قريق""
+        },
+        {
+            ""key"":""Connie"",
+            ""value"": ""دور كوني""
+        },
+        {
+            ""key"":""Lion"",
+            ""value"": ""دور أسد""
+        },
+        {
+            ""key"":""Jasper"",
+            ""value"": ""دور جاسبر""
+        },
+        {
+            ""key"":""Opal"",
+            ""value"": ""دور اوبال""
+        },
+        {
+            ""key"":""Sugilite"",
+            ""value"": ""دور سوقيليت""
+        },
+        {
+            ""key"":""Sardonyx"",
+            ""value"": ""دور ساردونيكس""
+        },
+        {
+            ""key"":""Alexandrite"",
+            ""value"": ""دور اليكساندرايت""
+        },
+        {
+            ""key"":""Holo Pearl"",
+            ""value"": ""دور هولو بيرل""
+        },
+        {
+            ""key"":""Bismuth"",
+            ""value"": ""دور بيزمث""
+        },
+        {
+            ""key"":""Stevonnie"",
+            ""value"": ""دور ستيفوني""
+        },
+        {
+            ""key"":""Smoky"",
+            ""value"": ""دور سموكي كوارتز""
+        },
+        {
+            ""key"":""Rainbow"",
+            ""value"": ""دور رينبو كوارتز""
+        },
+        {
+            ""key"":""Sunstone"",
+            ""value"": ""دور سن ستون""
+        },
+        {
+            ""key"":""Obsidian"",
+            ""value"": ""دور اوبسيدين""
+        },
+        {
+            ""key"":""White"",
+            ""value"": ""دور الويت دايموند""
+        },
+        {
+            ""key"":""Yellow"",
+            ""value"": ""دور اليلو دايموند""
+        },
+        {
+            ""key"":""Blue"",
+            ""value"": ""دور البلو دايموند""
+        },
+        {
+            ""key"":""Spinel"",
+            ""value"": ""دور سبينل""
+        },
+        {
+            ""key"":""Steven_alt"",
+            ""value"": ""ستيفن يفوز""
+        },
+        {
+            ""key"":""Garnet_alt"",
+            ""value"": ""قارنت تفوز""
+        },
+        {
+            ""key"":""Amethyst_alt"",
+            ""value"": ""امثيست تفوز""
+        },
+        {
+            ""key"":""Pearl_alt"",
+            ""value"": ""بيرل تفوز""
+        },
+        {
+            ""key"":""Ruby_alt"",
+            ""value"": ""روبي تفوز""
+        },
+        {
+            ""key"":""Sapphire_alt"",
+            ""value"": ""سافير تفوز""
+        },
+        {
+            ""key"":""Peridot_alt"",
+            ""value"": ""بيريدوت تفوز""
+        },
+        {
+            ""key"":""Lapis_alt"",
+            ""value"": ""لابيس تفوز""
+        },
+        {
+            ""key"":""Greg_alt"",
+            ""value"": ""قريق يفوز""
+        },
+        {
+            ""key"":""Connie_alt"",
+            ""value"": ""كوني تفوز""
+        },
+        {
+            ""key"":""Lion_alt"",
+            ""value"": ""أسد يفوز""
+        },
+        {
+            ""key"":""Jasper_alt"",
+            ""value"": ""جاسبر تفوز""
+        },
+        {
+            ""key"":""Opal_alt"",
+            ""value"": ""اوبال تفوز""
+        },
+        {
+            ""key"":""Sugilite_alt"",
+            ""value"": ""سوقيليت تفوز""
+        },
+        {
+            ""key"":""Sardonyx_alt"",
+            ""value"": ""ساردونيكس تفوز""
+        },
+        {
+            ""key"":""Alexandrite_alt"",
+            ""value"": ""اليكساندرايت تفوز""
+        },
+        {
+            ""key"":""Holo Pearl_alt"",
+            ""value"": ""هولو بيرل تفوز""
+        },
+        {
+            ""key"":""Bismuth_alt"",
+            ""value"": ""بيزمث تفوز""
+        },
+        {
+            ""key"":""Stevonnie_alt"",
+            ""value"": ""ستيفوني تفوز""
+        },
+        {
+            ""key"":""Smoky_alt"",
+            ""value"": ""سموكي كوارتز""
+        },
+        {
+            ""key"":""Rainbow_alt"",
+            ""value"": ""رينبو كوارتز تفوز""
+        },
+        {
+            ""key"":""Sunstone_alt"",
+            ""value"": ""سن ستون تفوز""
+        },
+        {
+            ""key"":""Obsidian_alt"",
+            ""value"": ""اوبسيدين تفوز""
+        },
+        {
+            ""key"":""White_alt"",
+            ""value"": ""الويت دايموند تفوز""
+        },
+        {
+            ""key"":""Yellow_alt"",
+            ""value"": ""اليلو دايموند تفوز""
+        },
+        {
+            ""key"":""Blue_alt"",
+            ""value"": ""البلو دايموند تفوز""
+        },
+        {
+            ""key"":""Spinel_alt"",
+            ""value"": ""سبينل تفوز""
         }
     ]}";
 }

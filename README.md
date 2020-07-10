@@ -1,8 +1,8 @@
 ![banner](docs/images/banner.png)
 
-Play as Garnet, Amethyst and Pearl, and Steven, and even more in this strategic
-dice game where you hunt and capture corrupted gems. Up to 5 players, alone
-against the AI or with friends on the same device.
+Play as Garnet, Amethyst and Pearl, and Steven, and even more in this strategic 
+dice game where you hunt and capture corrupted gems. Up to 5 players, with your 
+friends on the same device or play against the mighty Holo-Pearls.
 
 ## Installation
 
@@ -22,7 +22,7 @@ over the project. I started over again from scratch, but this time with Unity
 since it was a good opportunity to learn how to use the engine.
 
 Now there's a tutorial, new animations and art and the game is translated in
-english, french, spanish and portugese.
+English, French, Spanish, Portugese, Russian and Arabic.
 
 ## How to play
 

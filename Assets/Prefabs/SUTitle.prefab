@@ -212,9 +212,9 @@ MonoBehaviour:
   key: 
   texts: []
   uiTexts:
-  - {fileID: 6231122790482221591}
-  - {fileID: 1605880448175842978}
   - {fileID: 3220666906228630067}
+  - {fileID: 1605880448175842978}
+  - {fileID: 6231122790482221591}
 --- !u!1 &2566211568625303240
 GameObject:
   m_ObjectHideFlags: 0

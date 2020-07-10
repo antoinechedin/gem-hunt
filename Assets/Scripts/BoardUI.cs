@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Utils;
 
 public class BoardUI : MonoBehaviour
 {
@@ -173,7 +172,16 @@ public class BoardUI : MonoBehaviour
 
     public IEnumerator ShowTurnTitle(string characterName, Color characterColor, bool showButton)
     {
-        turnText.SetLocalizedFormatedText(new string[1] {LocalizationManager.instance.GetLocalizedValue(characterName)});
+        if (LocalizationManager.instance.Alphabet == Alphabet.Arabic)
+        {
+            turnText.SetText(LocalizationManager.instance.GetLocalizedValue(characterName));
+        }
+        else
+        {
+            bool alt = LocalizationManager.instance.Alphabet == Alphabet.Cyrillic;
+            turnText.SetLocalizedFormatedText(new string[1] { LocalizationManager.instance.GetLocalizedValue(characterName, alt) });
+        }
+
         turnText.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().color = characterColor;
         startButton.SetTextColor(characterColor);
 
@@ -250,11 +258,18 @@ public class BoardUI : MonoBehaviour
         StartCoroutine(BackgroudFade(0.6f, 0.4f));
 
         winTitle.SetActive(true);
-
-        winCharacter.sprite = player.image.sprite;
         resultButton.SetTextColor(player.GetCharacter().color);
-        winText.SetLocalizedFormatedText(new string[1] {LocalizationManager.instance.GetLocalizedValue(player.GetCharacter().name)});
+        winCharacter.sprite = player.image.sprite;
         winText.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().color = player.GetCharacter().color;
+
+        if (LocalizationManager.instance.Alphabet == Alphabet.Arabic)
+        {
+            winText.SetText(LocalizationManager.instance.GetLocalizedValue(player.GetCharacter().name, true));
+        }
+        else
+        {
+            winText.SetLocalizedFormatedText(new string[1] { LocalizationManager.instance.GetLocalizedValue(player.GetCharacter().name) });
+        }
 
         float duration = 0.4f;
         float t = 0;

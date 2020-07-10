@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Utils;
 
 public class LobbyManager : MonoBehaviour
 {
@@ -35,6 +34,8 @@ public class LobbyManager : MonoBehaviour
         playerMinus.onClick.AddListener(RemoveOnePlayer);
         computerPlus.onClick.AddListener(AddOneComputer);
         computerMinus.onClick.AddListener(RemoveOneComputer);
+
+        selectionScreen.GetComponent<Button>().onClick.AddListener(delegate { StartCoroutine(SelectCharacterAt(-1)); });
 
         for (int i = 0; i < playerSelectors.Length; i++)
         {
@@ -123,7 +124,7 @@ public class LobbyManager : MonoBehaviour
 
     public void UpdateCounterText()
     {
-        string s = "{0}/5 max";
+        string s = "{0}/5";
         int totalPlayer = playerCount + computerCount;
         counterText.SetText(string.Format(s, playerCount + computerCount));
         if (totalPlayer >= 2 && totalPlayer <= 5)

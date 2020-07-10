@@ -22,7 +22,7 @@
         },
         {
             "key":"counterText",
-            "value": "{0}/5 max"
+            "value": "max"
         },
         {
             "key":"stop",
@@ -38,7 +38,7 @@
         },
         {
             "key":"winText",
-            "value": "{0} wins!"
+            "value": "{0} won!"
         },
         {
             "key":"results",
@@ -177,8 +177,8 @@
             "value": "Opal"
         },
         {
-            "key":"Sugulite",
-            "value": "Sugulite"
+            "key":"Sugilite",
+            "value": "Sugilite"
         },
         {
             "key":"Sardonyx",
@@ -191,6 +191,46 @@
         {
             "key":"Holo Pearl",
             "value": "Holo Pearl"
+        },
+        {
+            "key":"Bismuth",
+            "value": "Bismuth"
+        },
+        {
+            "key":"Stevonnie",
+            "value": "Stevonie"
+        },
+        {
+            "key":"Smoky",
+            "value": "Smoky"
+        },
+        {
+            "key":"Rainbow",
+            "value": "Rainbow"
+        },
+        {
+            "key":"Sunstone",
+            "value": "Sunstone"
+        },
+        {
+            "key":"Obsidian",
+            "value": "Obsidian"
+        },
+        {
+            "key":"White",
+            "value": "White"
+        },
+        {
+            "key":"Yellow",
+            "value": "Yellow"
+        },
+        {
+            "key":"Blue",
+            "value": "Blue"
+        },
+        {
+            "key":"Spinel",
+            "value": "Spinel"
         }
     ]
 }
